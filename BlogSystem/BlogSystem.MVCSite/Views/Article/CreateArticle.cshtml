@@ -1,0 +1,86 @@
+﻿@model BlogSystem.MVCSite.Models.ArticleViewModels.CreateArticleViewModel
+
+
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+
+@using (Html.BeginForm("CreateArticle", "Article", FormMethod.Post, new { @id = "createArticleForm", @onsubmit = "return validateAndSubmitForm()" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+
+    <div class="form-group row mb-4">
+        <div class="col-md">
+            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @placeholder = "Subject for the post" } })
+
+        </div>
+
+        <div class="col-md-auto">
+            <select id="categorySelect" class="form-select form-control" aria-label="Default select example">
+                <option value="" selected disabled hidden>Select a category</option>
+                <option value="1">Technical</option>
+                <option value="0">Non-Technical</option>
+            </select>
+            <input type="hidden" id="category" name="Category" value="" />
+        </div>
+
+        <div class="col-md-auto col-6 mx-auto">
+            <button type="submit" class="btn btn-primary" style="width: 200px;">Post</button>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-md-12">
+            <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+            <script>
+                CKEDITOR.replace('editor1', {
+                    filebrowserImageBrowseUrl: '/browser/browse.php?type=Images',
+                    filebrowserImageUploadUrl: '/Article/uploadEditorImage',
+                });
+            </script>
+            <input type="hidden" name="Content" id="Content" value="" />
+        </div>
+    </div>
+    @if (ViewData.ModelState["Title"] != null && ViewData.ModelState["Title"].Errors.Count > 0 ||
+        ViewData.ModelState["Content"] != null && ViewData.ModelState["Content"].Errors.Count > 0 ||
+        ViewData.ModelState["Category"] != null && ViewData.ModelState["Category"].Errors.Count > 0)
+    {
+        <div class="form-group row">
+            <div class="col-md-12">
+                @if (ViewData.ModelState["Title"] != null && ViewData.ModelState["Title"].Errors.Count > 0)
+                {
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })<br />
+                }
+                @if (ViewData.ModelState["Content"] != null && ViewData.ModelState["Content"].Errors.Count > 0)
+                {
+                    @Html.ValidationMessageFor(model => model.Content, "", new { @class = "text-danger" })<br />
+                }
+                @if (ViewData.ModelState["Category"] != null && ViewData.ModelState["Category"].Errors.Count > 0)
+                {
+                    @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+                }
+            </div>
+        </div>
+    }
+
+    @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
+</div>
+}
+
+<script>
+    function validateAndSubmitForm() {
+
+        var htmlContent = CKEDITOR.instances.editor1.getData();
+        //if (htmlContent.trim().length === 0) {
+        //    alert("Content cannot be empty.");
+        //    return false;
+        //} else {
+            document.getElementById("Content").value = htmlContent.trim();
+
+        var selectElement = document.getElementById('categorySelect');
+        var hiddenInput = document.getElementById('category');
+        hiddenInput.value = selectElement.value;
+
+        return true;
+    }
+</script>

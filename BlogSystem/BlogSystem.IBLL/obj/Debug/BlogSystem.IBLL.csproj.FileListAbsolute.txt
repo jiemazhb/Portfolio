@@ -1,0 +1,108 @@
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.pdb
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csprojAssemblyReference.cache
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CoreCompileInputs.cache
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CopyComplete
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.pdb
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.pdb
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csprojAssemblyReference.cache
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CoreCompileInputs.cache
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CopyComplete
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csprojAssemblyReference.cache
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CoreCompileInputs.cache
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CopyComplete
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csprojAssemblyReference.cache
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CoreCompileInputs.cache
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CopyComplete
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.AssemblyReference.cache
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CoreCompileInputs.cache
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSyst.E66E8824.Up2Date
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.IBLL.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.AssemblyReference.cache
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.csproj.CoreCompileInputs.cache
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSyst.E66E8824.Up2Date
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IBLL\obj\Debug\BlogSystem.IBLL.pdb

@@ -1,0 +1,17 @@
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.DAL.dll.config
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.DAL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.DAL.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.IDAL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.Models.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\EntityFramework.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.IDAL.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.Models.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\BlogSystem.Models.dll.config
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\EntityFramework.xml
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\obj\Release\BlogSystem.DAL.csprojAssemblyReference.cache
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\obj\Release\BlogSystem.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\obj\Release\BlogSystem.DAL.csproj.CopyComplete
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\obj\Release\BlogSystem.DAL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.DAL\obj\Release\BlogSystem.DAL.pdb

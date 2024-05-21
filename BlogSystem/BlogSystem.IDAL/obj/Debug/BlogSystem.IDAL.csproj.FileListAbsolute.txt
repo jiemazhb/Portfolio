@@ -1,0 +1,72 @@
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csprojAssemblyReference.cache
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CopyComplete
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\danny\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csprojAssemblyReference.cache
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CopyComplete
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\Hong Liang Zhao\Desktop\C##\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csprojAssemblyReference.cache
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CopyComplete
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csprojAssemblyReference.cache
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CopyComplete
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\danny\Desktop\git\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.AssemblyReference.cache
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb
+C:\Users\16265\Desktop\BlogProject\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSyst.DA2F88E2.Up2Date
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.AssemblyReference.cache
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSyst.DA2F88E2.Up2Date
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb

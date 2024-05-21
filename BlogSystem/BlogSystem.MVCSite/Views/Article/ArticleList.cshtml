@@ -1,0 +1,94 @@
+﻿
+@using Webdiyer.WebControls.Mvc
+@using BlogSystem.Dto
+@model PagedList<ArticleList>
+
+
+<div class="container" >
+    <div class="row g-5 " >
+        <div class="col-6" style="background-color:white">
+            <table class="table table-hover">
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        if (item.Category == 1)
+                        {
+                            <tr>
+                                <td>
+                                    <a class="fs-6 text-truncate" href="@Url.Action("ArticleDetails", "Article", new { id = item.Id })">
+                                        @Html.Raw(item.Title)
+                                    </a>
+                                    <div class="d-flex justify-content-end text-muted" style="font-size:0.85rem">
+                                        <a href="@Url.Action("UserDetails", "User", new { id = item.UserId })">
+                                            Posted by @item.UserName
+                                        </a>
+                                        <span class="ms-5">Date: @item.CreateTime.ToString("yyyy-MM-dd")</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+            <ul id="right-column" style="text-decoration: none; padding: 0; margin: 0;">
+                @foreach (var item in Model)
+                {
+                    if (item.Category == 0)
+                    {
+                        <li class="mb-2" style="list-style-type: none; border-bottom: 1px dashed #ccc; padding-bottom: 10px;">
+                            <div>
+                                <a class="fs-6 text-truncate" href="@Url.Action("ArticleDetails", "Article", new { id = item.Id })"
+                                   style="text-decoration: none; color: inherit; display: block; width: 100%;"
+                                   onmouseover="this.style.color='#007bff';"
+                                   onmouseout="this.style.color='inherit';">
+                                    @Html.Raw(item.Title)
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end text-muted" style="font-size:0.85rem">
+                                <a href="@Url.Action("UserDetails", "User", new { id = item.UserId })"
+                                   style="text-decoration: none; color: inherit;"
+                                   onmouseover="this.style.color='#ff6600';"
+                                   onmouseout="this.style.color='inherit';">
+                                    Posted by @item.UserName
+                                </a>
+                                <span class="ms-5">Date: @item.CreateTime.ToString("yyyy-MM-dd")</span>
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<br />
+
+
+<nav aria-label="Page navigation example">
+        @Html.Pager(Model, new PagerOptions
+        {
+            PageIndexParameterName = "pageindex",
+            ContainerTagName = "ul",
+            CssClass = "pagination",
+            CurrentPagerItemTemplate = "<li class =\"page-item\" \"active\"><a class =\"page-link\" href = \"#\">{0}</a></li>",
+            DisabledPagerItemTemplate = "<li class =\"page-item\" \"disable\"><a class =\"page-link\">{0}</a></li>",
+            PagerItemTemplate = "<li class =\"page-link\">{0}</li>",
+            Id = "bootstrappager"
+        })
+ </nav>
+
+<style>
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 3px
+    }
+</style>
+
+<a href="@Url.Action("CreateArticle","Article")"> create article </a>
