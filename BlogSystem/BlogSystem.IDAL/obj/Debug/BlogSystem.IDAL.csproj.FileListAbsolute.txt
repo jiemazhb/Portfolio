@@ -70,3 +70,15 @@ C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debu
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSyst.DA2F88E2.Up2Date
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.dll
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.IDAL.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.dll
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\BlogSystem.Models.dll.config
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\bin\Debug\EntityFramework.xml
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.AssemblyReference.cache
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSyst.DA2F88E2.Up2Date
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.dll
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.IDAL\obj\Debug\BlogSystem.IDAL.pdb

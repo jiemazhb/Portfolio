@@ -27,3 +27,9 @@ C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.csproj.CoreCompileInputs.cache
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.dll
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.Dto\bin\Debug\BlogSystem.Dto.dll
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.Dto\bin\Debug\BlogSystem.Dto.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.csproj.AssemblyReference.cache
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.csproj.CoreCompileInputs.cache
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.dll
+C:\Users\16265\Desktop\git Project\Portfolio\Portfolio\BlogSystem\BlogSystem.Dto\obj\Debug\BlogSystem.Dto.pdb

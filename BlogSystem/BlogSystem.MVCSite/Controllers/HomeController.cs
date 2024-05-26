@@ -28,7 +28,7 @@ namespace BlogSystem.MVCSite.Controllers
         }
         public ActionResult Index()
         {
-
+            // for testing 
             return View();
 
         }
