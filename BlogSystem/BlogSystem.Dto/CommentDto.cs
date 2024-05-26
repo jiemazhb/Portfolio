@@ -15,5 +15,6 @@ namespace BlogSystem.Dto
         public string Content { get; set; }
         public DateTime CreateTime { get; set; }
         public string NickName { get; set; }
+        public string avatarPath { get; set; }
     }
 }

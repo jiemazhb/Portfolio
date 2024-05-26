@@ -4,6 +4,8 @@ using BlogSystem.IBLL;
 using BlogSystem.IDAL;
 using BlogSystem.Models;
 using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,6 +17,15 @@ namespace BlogSystem.BLL
         public UserManager(IUserService userService)
         {
             _userService = userService;
+        }
+        public async Task<List<Followers>> GetMostFolloerUser()
+        {
+            return await _userService.GetAll().OrderByDescending(u => u.FansCount).Take(6).Select(u => new Followers()
+            {
+                UserName = u.NickName,
+                AvatarPath = u.ImagePath,
+                AmountOfFuns = u.FansCount
+            }).ToListAsync();
         }
         public async Task ChangePassWord(string email, string oldPassWord, string newPassWord)
         {
@@ -53,23 +64,25 @@ namespace BlogSystem.BLL
             }
             else
             {
-                throw new ArgumentException("邮箱地址不纯在");
+                return null;
             }
         }
 
-        public bool Login(string email, string password, out Guid userId ,out string nickName)
+        public bool Login(string email, string password, out Guid userId ,out string nickName, out string iconPath)
         {
             var result = _userService.GetAll().FirstOrDefault(u => u.Email == email && u.PassWord == password);
             if (result == null)
             {
                 userId = new Guid();
                 nickName = null;
+                iconPath = null;
                 return false;
             }
             else
             {
                 userId = result.Id;
                 nickName = result.NickName;
+                iconPath = result.ImagePath;
                 return true;
             }
         }
@@ -89,7 +102,7 @@ namespace BlogSystem.BLL
             {
                 Email = email,
                 PassWord = password,
-                SiteName = "默认小站",
+                SiteName = "default",
                 ImagePath = IconPath,
                 NickName = nickName
             });

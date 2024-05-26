@@ -1,0 +1,66 @@
+﻿@using Webdiyer.WebControls.Mvc
+@using BlogSystem.Dto
+@model PagedList<ArticleDto>
+
+<div class="py-5 mb-3" style="background-image: url(/Images/AdobeStock_272072948.jpeg); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+    <div class="container">
+        <div class="row justify-content-center py-5">
+            <div class="col-md-6 text-center">
+                <!-- Title -->
+                <h1 class="text-white">Change your social presence.</h1>
+                <p class="mb-4 text-white">For who thoroughly her boy estimating conviction.</p>
+                <!-- Search form START -->
+                <form id="searchForm" class="rounded position-relative">
+                    <input id="search" class="form-control form-control-lg ps-5" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit"><i class="bi bi-search fs-5 ps-1"></i></button>
+                </form>
+                <!-- Search form END -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav justify-content-between">
+            <a href="#"></a>
+            <a href="@Url.Action("CreateArticle", "Article")" type="button" class="btn btn-outline-primary shadow">Create Post</a>
+        </nav>
+    </div>
+</div>
+
+<div id="dynamicContentContainer">
+    @if (string.IsNullOrEmpty(ViewBag.SearchStr as string))
+    {
+        @Html.Partial("_ArticleList", Model)
+    }
+    else
+    {
+        @Html.Partial("_SearchResult", Model)
+    }
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#searchForm").submit(function (event) {
+            event.preventDefault();
+            var inputVal = $("#search").val().trim();
+            if (inputVal !== "") {
+                $.ajax({
+                    url: "@Url.Action("ArticleListContainer", "Article")",
+                    type: "get",
+                    data: { searchStr: inputVal },
+                    success: function (response) {
+                        var newContent = $(response).find('#dynamicContentContainer').html();
+                        $("#dynamicContentContainer").html(newContent);
+                    },
+                    error: function (error) {
+                        alert("Search failed");
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+

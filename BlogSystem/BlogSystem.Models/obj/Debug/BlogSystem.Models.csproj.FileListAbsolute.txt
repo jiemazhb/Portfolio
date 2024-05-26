@@ -110,3 +110,7 @@ C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\De
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.dll
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.pdb
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.Migrations.updateArticle.resources
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.Migrations.updatecommenttable.resources
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.Migrations.updatecommenttableagain.resources
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.Migrations.updatetocloud.resources
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.Models\obj\Debug\BlogSystem.Models.Migrations.azuredatabase.resources

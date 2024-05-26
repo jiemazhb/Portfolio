@@ -51,12 +51,23 @@ namespace BlogSystem.MVCSite.Controllers
                     if(_userManager.GetUserByEmail(model.Email) != null)
                     {
                         this.ModelState.AddModelError("", "The email has already registered.");
-                        return View();
+                        return View(model);
+                    }
+
+                    string filePath = "/Images/avatar/human.png";
+
+                    if (model.IconPath != null && model.IconPath.ContentLength > 0)
+                    {
+                        string fileName = Path.GetFileName(model.IconPath.FileName);
+                        string savePath = Path.Combine(Server.MapPath("/Images/avatar"), fileName);
+                        model.IconPath.SaveAs(savePath);
+
+                        filePath = "/Images/avatar/" + fileName;
                     }
 
                     string hashedPassword = HashPasswordWithSHA256(model.PassWord);
 
-                    await _userManager.RegisterAsync(model.Email, hashedPassword, "null", model.NickName);
+                    await _userManager.RegisterAsync(model.Email, hashedPassword, filePath, model.NickName);
                     return RedirectToAction("Index");
                 }
 
@@ -99,10 +110,13 @@ namespace BlogSystem.MVCSite.Controllers
         {
             if (ModelState.IsValid)
             {
+                ClearCookieSession();
+
                 Guid userId;
                 string nickName;
+                string avatarPath;
                 string hashedPassword = HashPasswordWithSHA256(model.PassWord);
-                bool data = _userManager.Login(model.Email, hashedPassword, out userId, out nickName);
+                bool data = _userManager.Login(model.Email, hashedPassword, out userId, out nickName, out avatarPath);
                 if (data)
                 {   
                     if (model.RememberMe)
@@ -122,12 +136,18 @@ namespace BlogSystem.MVCSite.Controllers
                             Value = nickName,
                             Expires = DateTime.Now.AddDays(7)
                         });
+                        Response.Cookies.Add(new HttpCookie("AvatarPath")
+                        {
+                            Value = avatarPath,
+                            Expires = DateTime.Now.AddDays(7)
+                        });
                     }
                     else   
                     {
                         Session["LoginName"] = model.Email;
                         Session["userId"] = userId;
                         Session["NickName"] = nickName;
+                        Session["AvatarPath"] = avatarPath;
                     }
                     return RedirectToAction(nameof(Index));
                 }
@@ -138,19 +158,24 @@ namespace BlogSystem.MVCSite.Controllers
             }
             return View(model);
         }
-        public ActionResult ExitLogin()
+        public void ClearCookieSession()
         {
-            if (Session["LoginName"] != null || Session["userId"] != null || Session["NickName"] != null)
+            if (Session["LoginName"] != null || Session["userId"] != null || Session["NickName"] != null || Session["AvatarPath"] != null)
             {
                 Session.Clear();
             }
 
-            if (Request.Cookies["LoginName"] != null || Request.Cookies["userId"] !=null || Request.Cookies["NickName"] != null)
+            if (Request.Cookies["LoginName"] != null || Request.Cookies["userId"] != null || Request.Cookies["NickName"] != null || Response.Cookies["AvatarPath"] != null)
             {
                 Response.Cookies["LoginName"].Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies["userId"].Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies["NickName"].Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies["AvatarPath"].Expires = DateTime.Now.AddDays(-1);
             }
+        }
+        public ActionResult ExitLogin()
+        {
+            ClearCookieSession();
             return RedirectToAction(nameof(Index));
         }
 

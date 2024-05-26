@@ -95,6 +95,22 @@
     <Compile Include="Migrations\202405190110591_updateArticle.Designer.cs">
       <DependentUpon>202405190110591_updateArticle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405221840367_update-comment table.cs" />
+    <Compile Include="Migrations\202405221840367_update-comment table.Designer.cs">
+      <DependentUpon>202405221840367_update-comment table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405222108051_update-comment table again.cs" />
+    <Compile Include="Migrations\202405222108051_update-comment table again.Designer.cs">
+      <DependentUpon>202405222108051_update-comment table again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405231737384_update to cloud.cs" />
+    <Compile Include="Migrations\202405231737384_update to cloud.Designer.cs">
+      <DependentUpon>202405231737384_update to cloud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405261948297_azure database.cs" />
+    <Compile Include="Migrations\202405261948297_azure database.Designer.cs">
+      <DependentUpon>202405261948297_azure database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
@@ -130,6 +146,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405190110591_updateArticle.resx">
       <DependentUpon>202405190110591_updateArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405221840367_update-comment table.resx">
+      <DependentUpon>202405221840367_update-comment table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405222108051_update-comment table again.resx">
+      <DependentUpon>202405222108051_update-comment table again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405231737384_update to cloud.resx">
+      <DependentUpon>202405231737384_update to cloud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405261948297_azure database.resx">
+      <DependentUpon>202405261948297_azure database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

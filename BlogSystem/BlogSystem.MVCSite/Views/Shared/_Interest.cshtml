@@ -1,0 +1,31 @@
+﻿@using BlogSystem.Dto
+@model List<Followers>
+
+    <div class="card-header d-sm-flex justify-content-between border-0 pb-0">
+        <h5 class="card-title">Interests</h5>
+        @*<a class="btn btn-primary-soft btn-sm" href="#!"> See all</a>*@
+    </div>
+    <!-- Card header END -->
+    <!-- Card body START -->
+    <div class="card-body">
+        <div class="row g-4">
+            @foreach (Followers person in Model)
+            {
+                <div class="col-sm-6 col-lg-4">
+                    <!-- Interests item START -->
+                    <div class="d-flex align-items-center position-relative">
+                        <div class="avatar">
+                            <img class="avatar avatar-md rounded-circle float-start me-3" src="@person.AvatarPath"
+                                 alt="avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+                        </div>
+                        <div class="ms-2">
+                            <h6 class="mb-0"> <a class="stretched-link" href="#"> @person.UserName </a></h6>
+                            <p class="small mb-0">@person.AmountOfFuns followers</p>
+                        </div>
+                    </div>
+                    <!-- Interests item END -->
+                </div>
+            }
+
+        </div>
+    </div>

@@ -1,0 +1,305 @@
+﻿@model BlogSystem.Dto.ArticleDtoNew
+
+
+    <!-- Main content START -->
+    <div class="row g-4">
+        <!-- Main content START -->
+        <div class="col-lg-8">
+            <div class="vstack gap-4">
+                <!-- Blog single START -->
+                <div class="card card-body">
+                    <div class="mt-4">
+                        <!-- Tag -->
+                        <span class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">
+                            @if (Model.CategoryName == 0)
+                            {
+                                <text>Non-technical</text>
+                            }
+                            else
+                            {
+                                <text>Technical</text>
+                            }
+                        </span>
+
+                        <!-- Title info -->
+                        <h1 class="mb-2 h2">@Model.Title</h1>
+                        <ul class="nav nav-stack gap-3 align-items-center">
+                            <li class="nav-item">
+                                <div class="nav-link">
+                                    by <a href="#" class="text-reset btn-link text-decoration-none">@Model.NickName</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"> <i class="bi bi-calendar-date pe-1"></i>@Model.CreateTime</li>
+                        </ul>
+                        <hr />
+                        <div class="row mb-4">
+                            <div class="col-auto overflow-hidden">
+                                @Html.Raw(Model.Content)
+                            </div>
+                        </div>
+                        <!-- Row END -->
+                    </div>
+                    <hr />
+                    <ul class="nav nav-stack flex-wrap small mb-3">
+                        <li class="nav-item">
+                            <a id="like" class="nav-link" href="###" onclick="btnLikesHandler(this)">
+                                <i class="bi bi-hand-thumbs-up-fill pe-1"></i><span id="like-count">@Model.GoodCount</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="dislike" class="nav-link" href="###" onclick="btnDislikeHandler(this)">
+                                <i class="bi bi-hand-thumbs-down-fill pe-1"></i><span id="dislike-count">@Model.BadCount</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#comments"> <i class="bi bi-chat-fill pe-1"></i>@ViewBag.comments.Count</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card END -->
+                <!-- Comments START -->
+                <div id="comments" class="card">
+                    <div class="card-header pb-0 border-0">
+                        <h4>@ViewBag.comments.Count comments</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- Comments START -->
+                        @foreach (var comment in ViewBag.comments)
+                        {
+                            <div class="my-4 d-flex">
+                                <img class="avatar avatar-md rounded-circle float-start me-3" src="@comment.avatarPath"
+                                     alt="avatar" style="width: 30px; height: 30px; border-radius: 50%;">
+                                <div>
+                                    <div class="mb-2 d-sm-flex">
+                                        <h6 class="m-0 me-2">@comment.NickName</h6>
+                                        <span class="me-3 small">@comment.CreateTime </span>
+                                    </div>
+
+                                    <p>@comment.Content</p>
+                                </div>
+                            </div>
+                        }
+
+                        <!-- Comments END -->
+                        <hr class="my-4">
+                        <!-- Reply START -->
+                        <div>
+                            <h4>Leave a reply</h4>
+                            <form id="commentForm" class="row g-3 mt-2">
+                                <input type="hidden" id="articleId" value="@Model.Id" />
+                                <input type="hidden" id="userId" value="@Model.UserId" />
+                                <!-- Your Comment -->
+                                <div class="col-12">
+                                    <label class="form-label">Your Comment *</label>
+                                    <textarea id="commentContent" class="form-control" rows="3"></textarea>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary" onclick="addComment()">Post comment</button>
+                                </div>
+                            </form>
+
+                            <script>
+                                function addComment() {
+
+                                    $.ajax({
+                                        url: "/Article/AddComment/",
+                                        type: "post",
+                                        data: {
+                                            ArticleId: $("#articleId").val().trim(),
+                                            Content: $("#commentContent").val(),
+                                            UserId: $("#userId").val().trim()
+                                        }
+                                    }).done(function (param) {
+                                        if (param.result == "error") {
+                                            alert("need to login first!");
+                                        } else if (param.result == "ok") {
+                                            location.reload();
+                                        }
+                                    }).fail(function () {
+                                        alert("comment failed.");
+                                    })
+                                }
+
+                                function btnLikesHandler(btn) {
+                                    var articleId = $("#articleId").val().trim();
+                                    $.ajax({
+                                        url: "/Article/GoodCount/" + articleId,
+                                        type: "post",
+                                        success: function (data) {
+                                            if (data.result == "error") {
+                                                alert("Please, Login first！");
+                                            } else {
+                                                var currentLikes = $("#like-count").text();
+                                                if (currentLikes == data) {
+                                                    alert("You can only hit likes once！");
+                                                } else {
+                                                    $("#like-count").text(data);
+                                                }
+                                            }
+                                        },
+                                        error: function (e) {
+                                            alert("Something went wrong!");
+                                        }
+                                    })
+                                }
+
+                                function btnDislikeHandler(btn) {
+                                    var articleId = $("#articleId").val().trim();
+                                    $.ajax({
+                                        url: "/Article/BadCount/?articleid=" + articleId,
+                                        type: "post",
+                                        success: function (data) {
+                                            if (data.result == "error") {
+                                                alert("Please, Login first");
+                                            } else {
+                                                var currentDislikes = $("#dislike-count").text();
+                                                if (currentDislikes == data) {
+                                                    alert("You can only hit dislike once.");
+                                                } else {
+                                                    $("#dislike-count").text(data);
+                                                }
+                                            }
+                                        },
+                                        error: function (e) {
+                                            alert("Something went wrong");
+                                        }
+                                    })
+                                }
+
+                            </script>
+                        </div>
+                        <!-- Reply END -->
+                    </div>
+                </div>
+                <!-- Blog single END -->
+            </div>
+        </div>
+        <!-- Right sidebar START -->
+        <div class="col-lg-4">
+            <div class="row g-4">
+                <!-- Card News START -->
+                <div class="col-sm-6 col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            @{Html.RenderAction("RecentPosts", "Article");}
+                        </div>
+                        <!-- Card body END -->
+                    </div>
+                </div>
+                <!-- Card News END -->
+                <!-- Card News START -->
+                <div class="col-sm-6 col-lg-12">
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header pb-0 border-0">
+                            <h5 class="card-title mb-0">Tags</h5>
+                        </div>
+                        <!-- Card header END -->
+                        <!-- Card body START -->
+                        <div class="card-body">
+                            <!-- Tag list START -->
+                            <ul class="list-inline mb-0 d-flex flex-wrap gap-2">
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">blog</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">business</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">theme</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">social</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">getbootstrap</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">design</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">news</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">magazine</a>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                    <a class="btn btn-outline-light btn-sm" href="#">events</a>
+                                </li>
+                            </ul>
+                            <!-- Tag list END -->
+                            <!-- Card body END -->
+                        </div>
+                    </div>
+                    <!-- Card News END -->
+                </div>
+                <!-- Card follow START -->
+                <div class="col-sm-6 col-lg-12">
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header pb-0 border-0">
+                            <h5 class="card-title mb-0">Who to follow</h5>
+                        </div>
+                        <!-- Card header END -->
+                        <!-- Card body START -->
+                        <div class="card-body">
+
+                            <!-- Connection item START -->
+                            <div class="hstack gap-2 mb-3">
+                                <!-- Avatar -->
+                                <div class="avatar">
+                                    <a href="#"> <img class="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt=""> </a>
+                                </div>
+                                <!-- Title -->
+                                <div class="overflow-hidden">
+                                    <a class="h6 mb-0" href="#!">Billy Vasquez </a>
+                                    <p class="mb-0 small text-truncate">News anchor</p>
+                                </div>
+                                <!-- Button -->
+                                <a class="btn btn-primary rounded-circle icon-md ms-auto" href="#"><i class="bi bi-person-check-fill"> </i></a>
+                            </div>
+                            <!-- Connection item END -->
+                            <!-- Connection item START -->
+                            <div class="hstack gap-2 mb-3">
+                                <!-- Avatar -->
+                                <div class="avatar">
+                                    <a href="#"> <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt=""> </a>
+                                </div>
+                                <!-- Title -->
+                                <div class="overflow-hidden">
+                                    <a class="h6 mb-0" href="#!">Lori Ferguson </a>
+                                    <p class="mb-0 small text-truncate">Web Developer at Webestica</p>
+                                </div>
+                                <!-- Button -->
+                                <a class="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#"><i class="fa-solid fa-plus"> </i></a>
+                            </div>
+                            <!-- Connection item END -->
+                            <!-- Connection item START -->
+                            <div class="hstack gap-2">
+                                <!-- Avatar -->
+                                <div class="avatar">
+                                    <a href="#"> <img class="avatar-img rounded-circle" src="assets/images/avatar/placeholder.jpg" alt=""> </a>
+                                </div>
+                                <!-- Title -->
+                                <div class="overflow-hidden">
+                                    <a class="h6 mb-0" href="#!">Carolyn Ortiz </a>
+                                    <p class="mb-0 small text-truncate">News anchor</p>
+                                </div>
+                                <!-- Button -->
+                                <a class="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#"><i class="fa-solid fa-plus"> </i></a>
+                            </div>
+                            <!-- Connection item END -->
+
+                        </div>
+                        <!-- Card body END -->
+                    </div>
+                </div>
+                <!-- Card follow START -->
+            </div>
+            <!-- Right sidebar END -->
+        </div> <!-- Row END -->
+    </div>
+
+

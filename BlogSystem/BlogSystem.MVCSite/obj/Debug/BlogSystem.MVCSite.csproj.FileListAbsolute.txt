@@ -105,3 +105,6 @@ C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\obj\D
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\obj\Debug\BlogSyst.030CE9CC.Up2Date
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\obj\Debug\BlogSystem.MVCSite.dll
 C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\obj\Debug\BlogSystem.MVCSite.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\bin\HtmlAgilityPack.dll
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\bin\HtmlAgilityPack.pdb
+C:\Users\16265\Desktop\git Project\Portfolio\BlogSystem\BlogSystem.MVCSite\bin\HtmlAgilityPack.xml

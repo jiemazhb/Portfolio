@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Web;
 using Webdiyer.WebControls.Mvc;
 
+
 namespace BlogSystem.BLL
 {
     public class ArticleManager : IArticleManager
@@ -31,46 +32,52 @@ namespace BlogSystem.BLL
 
         }
 
-        public PagedList<ArticleList> GetAllArticles(int CurrentPage, int pageSize)
+        public PagedList<ArticleDto> GetAllArticles(int CurrentPage, int pageSize, out int amount)
         {
-            var res = _articleService.GetAll().Select(a => new ArticleList()
+            var query = _articleService.GetAll();
+
+            amount = query.Count();
+
+            var res = query.Select(a => new ArticleDto()
             {
                 Title = a.Title,
                 BadCount = a.BadCount,
-                Category = a.category,
+                CategoryNames = a.category,
                 CreateTime = a.CreateTime,
                 GoodCount = a.GoodCount,
                 Id = a.Id,
                 UserId = a.UserId,
-                UserName = a.User.NickName,
+                NickName = a.User.NickName,
             }).OrderBy(a => a.CreateTime).ToPagedList(CurrentPage, pageSize);
             
             return res;    
         }
-        public PagedList<ArticleDto> GetAllArticlesBySearchStr(string searchStr, int CurrentPage, int pageSize, out int amount)
+        public PagedList<ArticleDto> GetAllArticlesBySearchStr(string searchStr, int currentPage, int pageSize, out int amount)
         {
-            amount = _articleService.GetAll().Where(m => m.Title.Contains(searchStr) == true || m.Content.Contains(searchStr)).Count();
-            var articles = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Include(m => m.Article).Where(m => m.Article.Title.Contains(searchStr) == true || m.Article.Content.Contains(searchStr));
-            var art = articles.Select(m => new ArticleDto()
-            {
-                Title = m.Article.Title,
-                Content = m.Article.Content,
-                BadCount = m.Article.BadCount,
-                GoodCount = m.Article.GoodCount,
-                CreateTime = m.Article.CreateTime,
-                Id = m.Article.Id,
-                ImagePath = m.Article.User.ImagePath,
-                Email = m.Article.User.Email,
-                NickName = m.Article.User.NickName
-            }).OrderByDescending(m => m.CreateTime).ToList().ToPagedList(CurrentPage, pageSize);
 
-            foreach (var article in art)
-            {
-                var category = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Where(m => m.ArticleId == article.Id).ToList();
-                article.CategoryId = category.Select(m => m.BlogCategoryId).ToArray();
-                article.CategoryNames = category.Select(m => m.BlogCategory.CategoryName).ToArray();
-            }
-            return art;
+            var query = _articleService.GetAll()
+                .Where(m => m.Title.Contains(searchStr));
+
+            amount = query.Count();
+
+            var articles = query
+                .OrderByDescending(m => m.CreateTime)
+                .Skip((currentPage - 1) * pageSize)
+                .Take(pageSize)
+                .Select(m => new ArticleDto
+                {
+                    Title = m.Title,
+                    BadCount = m.BadCount,
+                    GoodCount = m.GoodCount,
+                    CreateTime = m.CreateTime,
+                    Id = m.Id,
+                    NickName = m.User.NickName,
+                    Content = m.Content,
+                    CategoryNames = m.category
+                   
+                }).ToPagedList(currentPage, pageSize);
+
+            return new PagedList<ArticleDto>(articles, currentPage, pageSize, amount);
         }
         public async Task<ArticleDtoNew> GetOneArticleByArticleIdAsync(Guid articleId)
         {
@@ -86,8 +93,7 @@ namespace BlogSystem.BLL
                     GoodCount = b.Article.GoodCount,
                     BadCount = b.Article.BadCount,
                     ImagePath = b.Article.User.ImagePath,
-                    CategoryId = b.BlogCategoryId,
-                    CategoryName = b.BlogCategory.CategoryName,
+                    //CategoryName = b.BlogCategory.CategoryName,
                     UserId = b.Article.UserId,
                     NickName = b.Article.User.NickName
                 }).FirstAsync();
@@ -96,17 +102,35 @@ namespace BlogSystem.BLL
         }
         public async Task<List<TopArticleDto>> GetTopArticles()
         {
-            return await _articleToCategoryService.GetAll().Include(m => m.Article).Include(n => n.BlogCategory)
-                .OrderByDescending(a => a.Article.GoodCount)
-                .Select(b => new TopArticleDto() 
-                { 
-                    Id = b.ArticleId,
-                    Title = b.Article.Title,
-                    CategoryId = b.BlogCategoryId,
-                    CategoryName = b.BlogCategory.CategoryName,
-                    Userid = b.Article.UserId,
-                    NickName = b.Article.User.NickName
-                }).Take(5).ToListAsync();
+
+                return await _articleService.GetAll().GroupBy(a => a.category)
+                    .SelectMany(g => g.OrderByDescending(a => a.GoodCount).Take(2))
+                    .Select(a => new TopArticleDto
+                    {
+                        Id = a.Id,
+                        Title = a.Title,
+                        Category = a.category,
+                        Likes = a.GoodCount,
+                        NickName = a.User.NickName,
+                        Userid = a.UserId,
+                        Content = a.Content
+                    })
+                    .ToListAsync();
+        }
+        public List<TopArticleDto> GetArticleByDateAsync()
+        {
+            return _articleService.GetAll()
+                .OrderByDescending(a => a.CreateTime)
+                .Select(b => new TopArticleDto()
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    CategoryName = b.category,
+                    Userid = b.UserId,
+                    NickName = b.User.NickName,
+                    Content =b.Content,
+                    CreateDate = b.CreateTime
+                }).Take(5).ToList();
         }
         /// <summary>
         /// get the article that most people like.
@@ -130,8 +154,7 @@ namespace BlogSystem.BLL
                         GoodCount = c.Article.GoodCount,
                         BadCount = c.Article.BadCount,
                         ImagePath = c.Article.User.ImagePath,
-                        CategoryId = c.BlogCategory.Id,
-                        CategoryName = c.BlogCategory.CategoryName
+                        //CategoryName = c.BlogCategory.CategoryName
                     }).FirstAsync();
             }
             catch (Exception)
@@ -194,13 +217,13 @@ namespace BlogSystem.BLL
             });
         }
 
-        public async Task CreateCommentAsync(Guid articleId, Guid userId, string Content)
+        public async Task CreateCommentAsync(Guid articleId, string content, Guid userId)
         {
             await _commentService.CreateAsync(new Comment()
             {
                 ArticleId = articleId,
                 UserId = userId,
-                Content = Content
+                Content = content
             });
         }
         public async Task<List<CommentDto>> GetCommentByArticleIdAsync(Guid articleId)
@@ -215,7 +238,8 @@ namespace BlogSystem.BLL
                 ArticleId = c.ArticleId,
                 Content = c.Content,
                 CreateTime = c.CreateTime,
-                NickName = c.User.NickName
+                NickName = c.User.NickName,
+                avatarPath = c.User.ImagePath
             }).ToListAsync();
         }
 
@@ -281,13 +305,7 @@ namespace BlogSystem.BLL
                 Email = article.User.Email,
                 NickName = article.User.NickName
             }).ToPagedList(CurrentPage, pageSize);
-            //得到每一个文章所属的类别
-            foreach (var item in result)
-            {
-                var cates = _articleToCategoryService.GetAll().Include(c => c.BlogCategory).Where(atc => atc.ArticleId == item.Id).ToList();
-                item.CategoryId = cates.Select(ac => ac.BlogCategoryId).ToArray();
-                item.CategoryNames = cates.Select(ac => ac.BlogCategory.CategoryName).ToArray();
-            }
+
             return result;
         }
         public PagedList<ArticleDto> GetAllArticlesByUserId(string categoryName, Guid userId, int CurrentPage, int pageSize)
@@ -306,12 +324,12 @@ namespace BlogSystem.BLL
                 NickName = m.Article.User.NickName
             }).OrderByDescending(m=>m.CreateTime).ToList().ToPagedList(CurrentPage, pageSize);
 
-            foreach (var article in art)
-            {
-                var category = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Where(m => m.ArticleId == article.Id).ToList();
-                article.CategoryId = category.Select(m => m.BlogCategoryId).ToArray();
-                article.CategoryNames = category.Select(m => m.BlogCategory.CategoryName).ToArray();
-            }
+            //foreach (var article in art)
+            //{
+            //    var category = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Where(m => m.ArticleId == article.Id).ToList();
+            //    article.CategoryId = category.Select(m => m.BlogCategoryId).ToArray();
+            //    article.CategoryNames = category.Select(m => m.BlogCategory.CategoryName).ToArray();
+            //}
             return art;
         }
         public List<BlogCategoryDto> GetAllCategories()
@@ -330,9 +348,9 @@ namespace BlogSystem.BLL
                     CategoryName = cate.CategoryName
                 }).ToList();                          
         }
-        public async Task<ArticleDto> GetOneArticleByIdAsync(Guid articleId)
+        public async Task<ArticleDtoNew> GetOneArticleByIdAsync(Guid articleId)
         {
-            var result = await _articleService.GetAll().Include(a => a.User).Where(a => a.Id == articleId).Select(article => new ArticleDto()
+            var result = await _articleService.GetAll().Include(a => a.User).Where(a => a.Id == articleId).Select(article => new ArticleDtoNew()
             {
                 Id = article.Id,
                 Title = article.Title,
@@ -342,12 +360,14 @@ namespace BlogSystem.BLL
                 CreateTime = article.CreateTime,
                 Email = article.User.Email,
                 ImagePath = article.User.ImagePath,
-                NickName = article.User.NickName
+                NickName = article.User.NickName,
+                CategoryName = article.category,
+                UserId = article.UserId
             }).FirstAsync();
 
-            var categoriesList = await _articleToCategoryService.GetAll().Include(a => a.BlogCategory).Where(atc => atc.ArticleId == result.Id).ToListAsync();
-            result.CategoryId = categoriesList.Select(ato => ato.BlogCategoryId).ToArray();
-            result.CategoryNames = categoriesList.Select(ato => ato.BlogCategory.CategoryName).ToArray();
+            //var categoriesList = await _articleToCategoryService.GetAll().Include(a => a.BlogCategory).Where(atc => atc.ArticleId == result.Id).ToListAsync();
+            //result.CategoryId = categoriesList.Select(ato => ato.BlogCategoryId).ToArray();
+            //result.CategoryNames = categoriesList.Select(ato => ato.BlogCategory.CategoryName).ToArray();
 
             return result;
         }
@@ -425,7 +445,11 @@ namespace BlogSystem.BLL
             var totalArticle = await _articleToCategoryService.GetAll().Include(m => m.BlogCategory).CountAsync(m => m.BlogCategory.CategoryName == categoryName);
             return totalArticle;
         }
-
+        public async Task<int> GetTotalOfArticlesAsync()
+        {
+            var totalArticle = await _articleService.GetAll().CountAsync();
+            return totalArticle;
+        }
         public PagedList<ArticleDto> GetAllArticlesByCategoryName(string categoryName, int CurrentPage, int pageSize, int orderType)
         {
             PagedList<ArticleDto> articles;
@@ -455,12 +479,12 @@ namespace BlogSystem.BLL
                 articles = art.OrderByDescending(m => m.CreateTime).ToList().ToPagedList(CurrentPage, pageSize);
             }
 
-            foreach (var article in articles)
-            {
-                var category = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Where(m => m.ArticleId == article.Id).ToList();
-                article.CategoryId = category.Select(m => m.BlogCategoryId).ToArray();
-                article.CategoryNames = category.Select(m => m.BlogCategory.CategoryName).ToArray();
-            }
+            //foreach (var article in articles)
+            //{
+            //    var category = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Where(m => m.ArticleId == article.Id).ToList();
+            //    article.CategoryId = category.Select(m => m.BlogCategoryId).ToArray();
+            //    article.CategoryNames = category.Select(m => m.BlogCategory.CategoryName).ToArray();
+            //}
             return articles;
         }
         /// <summary>
@@ -533,5 +557,7 @@ namespace BlogSystem.BLL
                 tempString += "…";
             return tempString;
         }
+
+
     }
 }

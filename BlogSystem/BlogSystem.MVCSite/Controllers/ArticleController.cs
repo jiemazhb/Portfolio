@@ -1,12 +1,13 @@
-﻿using BlogSystem.BLL;
-using BlogSystem.Dto;
+﻿using BlogSystem.Dto;
 using BlogSystem.IBLL;
+using BlogSystem.Models;
 using BlogSystem.MVCSite.Filters;
 using BlogSystem.MVCSite.Models.ArticleViewModels;
+using HtmlAgilityPack;
+using Microsoft.Ajax.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 using Webdiyer.WebControls.Mvc;
 
@@ -15,7 +16,6 @@ namespace BlogSystem.MVCSite.Controllers
     public class ArticleController : Controller
     {
         private readonly IArticleManager _articleManager;
-
         public ArticleController(IArticleManager articleManager)
         {
             _articleManager = articleManager;
@@ -113,27 +113,67 @@ namespace BlogSystem.MVCSite.Controllers
             //ModelState.AddModelError("", "添加失败");
             return View(model);
         }
-        /// <summary>
-        /// orderType代表排序类型，1热度， 2，最多评论 3.发表日期
-        /// </summary>
-        /// <param name="categoryName"></param>
-        /// <param name="currentPage"></param>
-        /// <param name="pageSize"></param>
-        /// <param name="orderType"></param>
-        /// <returns></returns>
-        public async Task<ActionResult> ArticleList(int pageindex = 1, int pageSize = 16, int orderType = 3)
+        //[HttpPost]
+        //public async Task<ActionResult> UploadImage()
+        //{
+        //    if (Request.Files.Count > 0)
+        //    {
+        //        var file = Request.Files[0]; // 获取上传的文件
+        //        if (file != null && file.ContentLength > 0)
+        //        {
+        //            var fileName = Path.GetFileName(file.FileName);
+        //            var path = Path.Combine(Server.MapPath("~/UploadedImages/"), fileName);
+        //            file.SaveAs(path);
+
+        //            return Json(new { success = true, message = "File uploaded successfully", filePath = "/UploadedImages/" + fileName });
+        //        }
+        //    }
+
+        //    return Json(new { success = false, message = "No file uploaded" });
+        //}
+        public async Task<ActionResult> ArticleListContainer(string searchStr, int pageindex = 1, int pageSize = 16)
         {
-            
-            //当前用户第n页数据
-            PagedList<ArticleList> articleList = _articleManager.GetAllArticles(pageindex, pageSize);
+            try
+            {
+                int amount;
+                ViewBag.SearchStr = searchStr;
+                if (searchStr == null || searchStr == "")
+                {
+                    PagedList<ArticleDto> articleList =  _articleManager.GetAllArticles(pageindex, pageSize, out amount);
 
-            //articleList = GetBrief(articleList);
+                    return View("ArticleListContainer", new PagedList<ArticleDto>(articleList, pageindex, pageSize, amount));
+                }
+                else
+                {
+                    pageSize = 4;
+                    PagedList<ArticleDto> articles = _articleManager.GetAllArticlesBySearchStr(searchStr, pageindex, pageSize, out amount);
 
-            //当前用户文章总数
-            //var total = await _articleManager.GetTotalOfArticlesAsync(categoryName);
-            //ViewData["Title"] = categoryName;
-            return View(new PagedList<ArticleList>(articleList, pageindex, pageSize, 18));
+                    foreach (var article in articles)
+                    {
+                        var doc = new HtmlDocument();
+                        doc.LoadHtml(article.Content);
+                        var imageNode = doc.DocumentNode.SelectSingleNode("//img");
+                        if (imageNode != null)
+                        {
+                            article.ImagePath = imageNode.Attributes["src"].Value;
+                        }
+                        else
+                        {
+                            article.ImagePath = "/Images/unnamed.png";
+                        }
+                    }
+                    ViewBag.amount = amount;
+
+                    return View("ArticleListContainer", new PagedList<ArticleDto>(articles, pageindex, pageSize, amount));
+                }
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }
+
         }
+
         private PagedList<ArticleDto> GetBrief(PagedList<ArticleDto> articleList)
         {
             string tempString;
@@ -146,48 +186,63 @@ namespace BlogSystem.MVCSite.Controllers
 
             return articleList;
         }
-
-        /// <summary>
-        /// 如果函数中得参数是可空的，那么在使用的时候一定要.value才行。 举例：ArticleDetail(Guid? articleId)
-        /// </summary>
-        /// <param name="articleId"></param>
-        /// <returns></returns>
-        public async Task<ActionResult> ArticleDetail(Guid? articleId)
+        [ChildActionOnly]
+        public ActionResult RecentPosts()
         {
-            if (articleId == null || !await _articleManager.IsExistAsync(articleId.Value))
+            List<TopArticleDto> recentPosts = _articleManager.GetArticleByDateAsync();
+
+            foreach (var article in recentPosts)
+            {
+                var doc = new HtmlDocument();
+                doc.LoadHtml(article.Content);
+                var imageNode = doc.DocumentNode.SelectSingleNode("//img");
+                if (imageNode != null)
+                {
+                    article.picPath = imageNode.Attributes["src"].Value;
+                }
+                else
+                {
+                    article.picPath = "/Images/unnamed.png"; // 默认图片如果没有找到图片
+                }
+            }
+            return PartialView("_RecentPosts", recentPosts);
+        }
+        public List<string> ExtractImageUrls(string htmlContent)
+        {
+
+            var urls = new List<string>();
+            var doc = new HtmlDocument();
+            doc.LoadHtml(htmlContent);
+
+            var images = doc.DocumentNode.SelectNodes("//img[@src]");
+            if (images != null)
+            {
+                foreach (var img in images)
+                {
+                    string src = img.GetAttributeValue("src", string.Empty);
+                    if (!string.IsNullOrEmpty(src))
+                    {
+                        urls.Add(src);
+                    }
+                }
+            }
+            return urls;
+        }
+
+        public async Task<ActionResult> ArticleDetail(Guid? Id)
+        {
+            if (Id == null || !await _articleManager.IsExistAsync(Id.Value))
             {
                 return RedirectToAction(nameof(ArticleList));
             }
             else
             {
-                ViewBag.comments = await _articleManager.GetCommentByArticleIdAsync(articleId.Value);
-                var article = await _articleManager.GetOneArticleByIdAsync(articleId.Value);
+                ViewBag.comments = await _articleManager.GetCommentByArticleIdAsync(Id.Value);
+                var article = await _articleManager.GetOneArticleByIdAsync(Id.Value);
                 return View(article);
             }
         }
-
-        public async Task<ActionResult> ArticleEdit(Guid? articleId)
-        {
-            if (articleId == null || !await _articleManager.IsExistAsync(articleId.Value))
-            {
-                return RedirectToAction(nameof(ArticleList));
-            }
-            else
-            {
-                var article = await _articleManager.GetOneArticleByIdAsync(articleId.Value);
-
-                ViewBag.CategoryIds = GetCategories();
-
-                var CurrentArticle = new EditArticleViewModel() {
-                    Id = article.Id,
-                    Title = article.Title,
-                    Content = article.Content,
-                    CategoriesId = article.CategoryId
-                };
-
-                return View(CurrentArticle);
-            }
-        }
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ArticleEdit(EditArticleViewModel model)
@@ -211,7 +266,8 @@ namespace BlogSystem.MVCSite.Controllers
         [UserInfoSession]
         public async Task<ActionResult> GoodCount(Guid id)
         {
-            var tempStr = Session["LoginName"];
+
+            var tempStr = Session["userId"];
             if (tempStr == null)
             {
                 return Json(new { result = "error" });
@@ -242,35 +298,44 @@ namespace BlogSystem.MVCSite.Controllers
         [UserInfoSession]
         public async Task<JsonResult> AddComment(CreateCommentViewModel model)
         {
-            var tempStr = Session["userId"];         
-            if (tempStr == null)
+            var userId = Session["userId"];
+            if (userId == null)
             {
                 return Json(new { result = "error" });
             }
             else
             {
-                var userId = Guid.Parse(tempStr.ToString());
-                await _articleManager.CreateCommentAsync(model.Id, userId, model.Content);
+                var uId = Guid.Parse(userId.ToString());
+                await _articleManager.CreateCommentAsync(model.ArticleId, model.Content, uId);
                 return Json(new { result = "ok" });
             }
         }
-        public async Task<ActionResult> GetTopFiveArticle()
+
+        public async Task<ActionResult> GetTopFourArticle()
         {
             var topArticle = await _articleManager.GetTopArticles();
-            return PartialView("_GetTopFiveArticle", topArticle);
+
+            foreach (var article in topArticle)
+            {
+                var doc = new HtmlDocument();
+                doc.LoadHtml(article.Content);
+                var imageNode = doc.DocumentNode.SelectSingleNode("//img");
+                if (imageNode != null)
+                {
+                    article.picPath = imageNode.Attributes["src"].Value;
+                }
+                else
+                {
+                    article.picPath = "/Images/unnamed.png"; // 默认图片如果没有找到图片
+                }
+            }
+                return PartialView("_GetTopFourArticle", topArticle);
         }
         public async Task<JsonResult> GetOneArticleOfTopFive(Guid? articleId)
         {
             var article = await _articleManager.GetOneArticleByArticleIdAsync(articleId.Value);
             return Json(article, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult SearchArticle(string searchStr, int currentPage = 1, int pageSize = 4) 
-        {
-            int amount;
-            var articles = _articleManager.GetAllArticlesBySearchStr(searchStr, currentPage, pageSize,out amount);
-            ViewBag.amount = amount;
-            articles = GetBrief(articles);
-            return View(articles);
-        }
+
     }
 }

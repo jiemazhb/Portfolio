@@ -16,8 +16,7 @@ namespace BlogSystem.Dto
         public int GoodCount { get; set; }
         public int BadCount { get; set; }
         public string ImagePath { get; set; }
-        public string CategoryName { get; set; }
-        public Guid CategoryId { get; set; }
+        public int CategoryName { get; set; }
         public Guid UserId { get; set; }
         public string NickName { get; set; }
     }

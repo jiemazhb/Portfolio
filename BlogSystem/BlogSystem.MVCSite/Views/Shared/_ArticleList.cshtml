@@ -1,0 +1,117 @@
+﻿
+@using Webdiyer.WebControls.Mvc
+@using BlogSystem.Dto
+@model PagedList<ArticleDto>
+
+@{
+    var items = Model.ToList();
+}
+
+<div class="container ">
+    <div class="row ">
+        <div class="col-6 p-0 pe-lg-2 mb-3 ">
+            <table class="table table-hover" style="table-layout: fixed; width: 100%;">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Technical</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in items)
+                    {
+                        if (item.CategoryNames == 1)
+                        {
+                            <tr>
+                                <td class="text-truncate">
+                                    <a href="@Url.Action("ArticleDetail", "Article", new { id = item.Id })"
+                                       style="text-decoration: none; color: inherit">
+                                        @Html.Raw(item.Title)
+                                    </a>
+                                    <div class="d-flex justify-content-between text-muted" style="font-size:0.85rem">
+                                        <div>
+                                            <span class="badge rounded-pill bg-success">Likes @item.GoodCount</span>
+                                            <span class="ms-3 badge rounded-pill bg-danger">Dislikes: @item.BadCount</span>
+                                        </div>
+                                        <div>
+                                            <a href="@Url.Action("UserDetails", "User", new { id = item.UserId })"
+                                               style="text-decoration: none; color: inherit">
+                                                by @item.NickName
+                                            </a>
+                                            <span class="ms-3">Date: @item.CreateTime.ToString("yyyy-MM-dd")</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6  p-0 pe-lg-2 mb-3">
+            <table class="table table-hover" style="table-layout: fixed; width: 100%;">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Non-technical</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        if (item.CategoryNames == 0)
+                        {
+                            <tr>
+                                <td class="text-truncate">
+                                    <a href="@Url.Action("ArticleDetail", "Article", new { id = item.Id })"
+                                       style="text-decoration: none; color: inherit">
+                                        @Html.Raw(item.Title)
+                                    </a>
+                                    <div class="d-flex justify-content-between text-muted" style="font-size:0.85rem">
+                                        <div>
+                                            <span class="badge rounded-pill bg-success">Likes @item.GoodCount</span>
+                                            <span class="ms-3 badge rounded-pill bg-danger">Dislikes: @item.BadCount</span>
+                                        </div>
+
+                                        <div>
+                                            <a href="@Url.Action("UserDetails", "User", new { id = item.UserId })"
+                                               style="text-decoration: none; color: inherit">
+                                                by @item.NickName
+                                            </a>
+                                            <span class="ms-3">Date: @item.CreateTime.ToString("yyyy-MM-dd")</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <nav aria-label="Page navigation example">
+            @Html.Pager(Model, new PagerOptions
+            {
+                PageIndexParameterName = "pageindex",
+                ContainerTagName = "ul",
+                CssClass = "pagination",
+                CurrentPagerItemTemplate = "<li class =\"page-item\" \"active\"><a class =\"page-link\" href = \"#\">{0}</a></li>",
+                DisabledPagerItemTemplate = "<li class =\"page-item\" \"disable\"><a class =\"page-link\">{0}</a></li>",
+                PagerItemTemplate = "<li class =\"page-link\">{0}</li>",
+                Id = "bootstrappager"
+            })
+        </nav>
+        <style>
+            .pagination {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0;
+                padding: 3px
+            }
+        </style>
+    </div>
+</div>
+
+
+
+<br />
+<hr />
+

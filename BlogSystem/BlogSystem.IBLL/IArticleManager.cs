@@ -9,7 +9,8 @@ namespace BlogSystem.IBLL
 {
     public interface IArticleManager
     {
-        PagedList<ArticleList> GetAllArticles(int CurrentPage, int pageSize);
+        List<TopArticleDto> GetArticleByDateAsync();
+        PagedList<ArticleDto> GetAllArticles(int CurrentPage, int pageSize, out int amount);
         /// <summary>
         /// /创建文章
         /// </summary>
@@ -93,7 +94,7 @@ namespace BlogSystem.IBLL
         /// </summary>
         /// <param name="articleId"></param>
         /// <returns></returns>
-        Task<ArticleDto> GetOneArticleByIdAsync(Guid articleId);
+        Task<ArticleDtoNew> GetOneArticleByIdAsync(Guid articleId);
         Task<ArticleDtoNew> GetOneArticleByArticleIdAsync(Guid articleId);
         /// <summary>
         /// 得到当前用户总的文章数
@@ -101,6 +102,7 @@ namespace BlogSystem.IBLL
         /// <param name="userId"></param>
         /// <returns></returns>
         Task<int> GetTotalOfArticlesAsync(Guid userId);
+        Task<int> GetTotalOfArticlesAsync();
         Task<int> GetTotalOfArticlesAsync(string categoryName);
         Task<int> GetTotalOfArticlesAsync(string categoryName, Guid userId);
         /// <summary>
@@ -124,7 +126,7 @@ namespace BlogSystem.IBLL
         /// <param name="userId"></param>
         /// <param name="Content"></param>
         /// <returns></returns>
-        Task CreateCommentAsync(Guid articleId, Guid userId, string Content);
+        Task CreateCommentAsync(Guid articleId, string content, Guid userId);
         Task<List<CommentDto>> GetCommentByArticleIdAsync(Guid articleId);
         Task<bool> IsCategoryExsitAsync(Guid articleId);
         Task<BlogCategoryDto> GetOneCategoryByIdAsync(Guid categoryId);

@@ -31,6 +31,8 @@ namespace BlogSystem.Models
         [ForeignKey(nameof(Article))]
         public Guid ArticleId { get; set; }
         public Article Article { get; set; }
+        public int likes { get; set; }
+        public int dislikes { get; set; }
 
     }
 }

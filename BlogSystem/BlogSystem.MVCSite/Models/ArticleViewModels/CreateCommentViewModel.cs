@@ -7,7 +7,8 @@ namespace BlogSystem.MVCSite.Models.ArticleViewModels
 {
     public class CreateCommentViewModel
     {
-        public Guid Id { get; set; }
+        public Guid ArticleId { get; set; }
         public string Content { get; set; }
+
     }
 }

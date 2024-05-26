@@ -48,5 +48,7 @@ namespace BlogSystem.MVCSite.Models.UserViewModels
         [Compare(nameof(PassWord), ErrorMessage ="Password not match")]
         [Display(Name = "Re-Password")]
         public string ConfirmPassWord { get; set; }
+        [Display(Name = "upload pic")]
+        public HttpPostedFileBase IconPath { get; set; }
     }
 }

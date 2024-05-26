@@ -65,6 +65,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.61.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.61\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -155,7 +158,14 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\AdobeStock_272072948.jpeg" />
+    <Content Include="Images\avatar\About Me-1.png" />
+    <Content Include="Images\avatar\Avatar Image-1.png" />
+    <Content Include="Images\avatar\Avatar Image-2.png" />
+    <Content Include="Images\avatar\Avatar Image.png" />
+    <Content Include="Images\avatar\human.png" />
     <Content Include="Images\digitization-5140049_1920.jpg" />
+    <Content Include="Images\download.jpg" />
     <Content Include="Images\ee8de5c0a72829b3a913338e80b9e137.jpg" />
     <Content Include="Images\illustration-2.png" />
     <Content Include="Images\Image_20230921215021.jpg" />
@@ -811,12 +821,17 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutMainWithMultipleRow.cshtml" />
-    <Content Include="Views\Article\_GetTopFiveArticle.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Article\ArticleList.cshtml" />
     <Content Include="Views\Article\CreateArticle.cshtml" />
     <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Article\ArticleDetail.cshtml" />
+    <Content Include="Views\Article\_RecentPosts.cshtml" />
+    <Content Include="Views\Shared\_Interest.cshtml" />
+    <Content Include="Views\Shared\_GetTopFourArticle.cshtml" />
+    <Content Include="Views\Shared\_ArticleList.cshtml" />
+    <Content Include="Views\Shared\_SearchResult.cshtml" />
+    <Content Include="Views\Article\ArticleListContainer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

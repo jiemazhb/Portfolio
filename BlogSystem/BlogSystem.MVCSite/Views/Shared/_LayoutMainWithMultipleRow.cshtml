@@ -6,15 +6,16 @@
 
     <div class="container">
         <div class="nav-scroller py-1 mb-3 border-bottom">
-            <nav class="nav nav-underline justify-content-between">
-                <a class="nav-item nav-link link-body-emphasis active" href="@Url.Action("Index","Home")">Home</a>
-                <a class="nav-item nav-link link-body-emphasis" href="#">Portfolio</a>
+            <nav class="nav nav-underline justify-content-between ">
+                <a class="nav-item nav-link link-body-emphasis " href="@Url.Action("Index","Home")">Home</a>
+                @*<a class="nav-item nav-link link-body-emphasis" href="#">Portfolio</a>
                 <a class="nav-item nav-link link-body-emphasis" href="#">Skills</a>
-                <a class="nav-item nav-link link-body-emphasis" href="#">Resume</a>
-                <a class="nav-item nav-link link-body-emphasis" href="@Url.Action("ArticleList","Article")">Technical Articles</a>
-                <a class="nav-item nav-link link-body-emphasis" href="#">Forums</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Resume</a>*@
+                <a class="nav-item nav-link link-body-emphasis" href="@Url.Action("ArticleListContainer","Article")">Articles</a>
+                @*<a class="nav-item nav-link link-body-emphasis" href="@Url.Action("ArticleList","Article")">Articles</a>*@
+                @*<a class="nav-item nav-link link-body-emphasis" href="#">Forums</a>
                 <a class="nav-item nav-link link-body-emphasis" href="#">Gallery</a>
-                <a class="nav-item nav-link link-body-emphasis" href="#">Sitemap</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Sitemap</a>*@
                 <a class="nav-item nav-link link-body-emphasis" href="@Url.Action("Index", "Home")#bottom">Contact</a>
                 <a class="nav-item nav-link link-body-emphasis aboutMeLink" href="@Url.Action("AboutMe","Home")">About me</a>
                 <a class="nav-item nav-link link-body-emphasis" href="@Url.Action("FAQ","Home")">FAQ</a>
@@ -24,23 +25,23 @@
 
 }
 
-<div>
-    @RenderBody()
-</div>
+        <div>
+            @RenderBody()
+        </div>
 
-@section footer{
-    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo"></a>.</p>
-        <p class="mb-0">
-            <a href="#">Back to top</a>
-        </p>
-    </footer>
-}
+        @section footer{
+            <footer class="py-5 text-center text-body-secondary bg-body-tertiary mt-5">
+                <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo"></a>.</p>
+                <p class="mb-0">
+                    <a href="#">Back to top</a>
+                </p>
+            </footer>
+        }
 
 
-@*<footer class="py-5 text-center text-body-secondary bg-body-tertiary" style="position: fixed; bottom: 0; width: 100%; background-color: var(--bs-body-tertiary);">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">mdo</a>.</p>
-    <p class="mb-0">
-        <a href="#">Back to top</a>
-    </p>
-</footer>*@
+        @*<footer class="py-5 text-center text-body-secondary bg-body-tertiary" style="position: fixed; bottom: 0; width: 100%; background-color: var(--bs-body-tertiary);">
+                <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">mdo</a>.</p>
+                <p class="mb-0">
+                    <a href="#">Back to top</a>
+                </p>
+            </footer>*@
