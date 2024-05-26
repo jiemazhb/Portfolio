@@ -17,7 +17,7 @@ namespace BlogSystem.MVCSite.Controllers
         {
             this._userManager = userManager;
         }
-        // GET: User
+
         public ActionResult GetCurrentUser()
         {
             return View();

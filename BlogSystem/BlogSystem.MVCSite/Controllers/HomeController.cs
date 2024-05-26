@@ -28,9 +28,7 @@ namespace BlogSystem.MVCSite.Controllers
         }
         public ActionResult Index()
         {
-            //var article = await _articleManager.GetArticleByLikeAsync();
 
-            //return View(article);
             return View();
 
         }

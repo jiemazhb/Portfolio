@@ -326,7 +326,7 @@ namespace BlogSystem.MVCSite.Controllers
                 }
                 else
                 {
-                    article.picPath = "/Images/unnamed.png"; // 默认图片如果没有找到图片
+                    article.picPath = "/Images/unnamed.png"; 
                 }
             }
                 return PartialView("_GetTopFourArticle", topArticle);
