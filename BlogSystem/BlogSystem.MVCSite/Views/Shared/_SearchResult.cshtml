@@ -20,20 +20,16 @@ else
             <div class="card bg-transparent border-0">
                 <div class="row g-3" >
                     <div class="col-4">
-                        <!-- Blog image -->
-                        <img class="rounded img-fluid" src="@item.ImagePath" alt="" style="height: 100%; object-fit: cover;">
+                        <img class="rounded img-fluid" src="@item.ImagePath" alt="" style=" object-fit: cover;">
                     </div>
                     <div class="col-8" >
-                        <!-- Blog caption -->
                         <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">
                             @(item.CategoryNames == 0 ? "Non-technical" : "Technical")
                         </a>
 
                         <h5><a href="@Url.Action("ArticleDetail","Article", new {id = item.Id})" class="btn-link stretched-link text-reset fw-bold">@item.Title</a></h5>
-                        @*<div class="d-none d-sm-inline-block">*@
                         <div class="d-sm-inline-block" style="font-size: 0.875rem; line-height: 1.5; max-height: 4.5rem; overflow: hidden; text-overflow:ellipsis">
                             <p class="mb-2 text-truncate">@Html.Raw(item.Content)</p>
-                            <!-- BLog date -->
                         </div>
                         <div class="position-absolute bottom-0 end-0 ">
                             <a href="###" class="text-secondary btn-link text-decoration-none me-3 ">by @item.NickName</a>
