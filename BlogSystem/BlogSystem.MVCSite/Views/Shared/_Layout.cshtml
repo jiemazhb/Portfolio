@@ -37,9 +37,9 @@
                                     }
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor=''; this.style.color='';">View Profile</a></li>
-                                    <li><a class="dropdown-item" href="#" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor=''; this.style.color='';">Setting & Privacy</a></li>
-                                    <li><hr class="dropdown-divider"></li>
+                                    <li hidden><a class="dropdown-item" href="@Url.Action("UserProfile", "User", new {userId = Session["userId"] == null ? Request.Cookies["userId"].Value : Session["userId"]})" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor=''; this.style.color='';">View Profile</a></li>
+                                    @*<li><a class="dropdown-item" href="#" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor=''; this.style.color='';">Setting & Privacy</a></li>*@
+                                    <li hidden><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="@Url.Action("ExitLogin", "Home")" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor=''; this.style.color='';">Logout</a></li>
                                 </ul>
                             </li>
@@ -60,11 +60,12 @@
         @RenderSection("navibar", false)
     </div>
 
-    <div id="content" class="mt-4">
-        <div class="container-sm">
-            @RenderBody()
-        </div>
+
+
+    <div>
+        @RenderBody()
     </div>
+
 
     <div>
         @RenderSection("footer", false)

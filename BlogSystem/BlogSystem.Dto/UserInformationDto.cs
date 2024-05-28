@@ -10,5 +10,6 @@ namespace BlogSystem.Dto
         public string SiteName { get; set; }
         public int FansCount { get; set; }
         public int FocusCount { get; set; }
+        public string UserName { get; set; }
     }
 }

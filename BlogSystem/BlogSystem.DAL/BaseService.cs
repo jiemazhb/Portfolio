@@ -111,5 +111,10 @@ namespace BlogSystem.DAL
             await _db.SaveChangesAsync();
             _db.Configuration.ValidateOnSaveEnabled = true; 
         }
+
+        IQueryable<T> IBaseService<T>.GetOneByIdAsync(Guid id)
+        {
+            return GetAll().Where(t => t.Id == id);
+        }
     }
 }

@@ -32,6 +32,14 @@ namespace BlogSystem.BLL
 
         }
 
+        public async Task StatisticsArticleDataAsync(WebSiteStatistic webSiteStatistic)
+        {
+
+            webSiteStatistic.likes = await _articleService.GetAll().SumAsync(a => a.GoodCount);
+            webSiteStatistic.posts = await _articleService.GetAll().CountAsync();
+            webSiteStatistic.comments = await _commentService.GetAll().CountAsync();
+
+        }
         public PagedList<ArticleDto> GetAllArticles(int CurrentPage, int pageSize, out int amount)
         {
             var query = _articleService.GetAll();
@@ -93,7 +101,6 @@ namespace BlogSystem.BLL
                     GoodCount = b.Article.GoodCount,
                     BadCount = b.Article.BadCount,
                     ImagePath = b.Article.User.ImagePath,
-                    //CategoryName = b.BlogCategory.CategoryName,
                     UserId = b.Article.UserId,
                     NickName = b.Article.User.NickName
                 }).FirstAsync();
@@ -104,7 +111,7 @@ namespace BlogSystem.BLL
         {
 
                 return await _articleService.GetAll().GroupBy(a => a.category)
-                    .SelectMany(g => g.OrderByDescending(a => a.GoodCount).Take(2))
+                    .SelectMany(g => g.OrderByDescending(a => a.GoodCount).Take(3))
                     .Select(a => new TopArticleDto
                     {
                         Id = a.Id,
@@ -113,7 +120,8 @@ namespace BlogSystem.BLL
                         Likes = a.GoodCount,
                         NickName = a.User.NickName,
                         Userid = a.UserId,
-                        Content = a.Content
+                        Content = a.Content,
+                        CreateDate = a.CreateTime
                     })
                     .ToListAsync();
         }
@@ -165,14 +173,14 @@ namespace BlogSystem.BLL
         }
         public async Task BadCountAsync(Guid articleId)
         {
-            var article = await _articleService.GetOneByIdAsync(articleId);
+            var article = await _articleService.GetOneByIdAsync(articleId).FirstAsync();
             article.BadCount++;
             await _articleService.EditAsync(article);
 
         }
         public async Task<int> BadCountAsync(Guid articleId, string email)
         {
-            var article = await _articleService.GetOneByIdAsync(articleId);
+            var article = await _articleService.GetOneByIdAsync(articleId).FirstAsync();
             if (article.DislikeUserInfo == null || article.DislikeUserInfo.Contains(email)  == false)
             {
                 article.BadCount++;
@@ -245,7 +253,7 @@ namespace BlogSystem.BLL
 
         public async Task EditArticle(Guid ArticleId, string newTitle, string newContent, Guid[] newCategoryId)
         {
-            var article = await _articleService.GetOneByIdAsync(ArticleId);
+            var article = await _articleService.GetOneByIdAsync(ArticleId).FirstAsync();
             article.Title = newTitle;
             article.Content = newContent;
             await _articleService.EditAsync(article);
@@ -269,7 +277,7 @@ namespace BlogSystem.BLL
 
         public async Task EditCategory(Guid categoryId, string newCategoryName)
         {
-            var category = await _blogCategoryService.GetOneByIdAsync(categoryId);
+            var category = await _blogCategoryService.GetOneByIdAsync(categoryId).FirstAsync();
             category.CategoryName = newCategoryName;
 
             await _blogCategoryService.EditAsync(category);
@@ -374,13 +382,13 @@ namespace BlogSystem.BLL
 
         public async Task GoodCountAsync(Guid articleId)
         {
-            var article = await _articleService.GetOneByIdAsync(articleId);
+            var article = await _articleService.GetOneByIdAsync(articleId).FirstAsync();
             article.GoodCount++;
             await _articleService.EditAsync(article);
         }
         public async Task<int> GoodCountAsync(Guid articleId, string userEmail)
         {
-            var article = await _articleService.GetOneByIdAsync(articleId);         
+            var article = await _articleService.GetOneByIdAsync(articleId).FirstAsync();         
             if (article.LikeUserInfo == null || article.LikeUserInfo.Contains(userEmail) == false) 
             {
                 article.GoodCount++;
@@ -415,7 +423,7 @@ namespace BlogSystem.BLL
         public async Task<BlogCategory> GetCategoryByArticleIdAsync(Guid articleId)
         {
             var articleTocategory = await _articleToCategoryService.GetAll().FirstAsync(m=>m.ArticleId==articleId);
-            var catogory = await _blogCategoryService.GetOneByIdAsync(articleTocategory.BlogCategoryId);
+            var catogory = await _blogCategoryService.GetOneByIdAsync(articleTocategory.BlogCategoryId).FirstAsync();
 
             return catogory;
         }
@@ -479,12 +487,6 @@ namespace BlogSystem.BLL
                 articles = art.OrderByDescending(m => m.CreateTime).ToList().ToPagedList(CurrentPage, pageSize);
             }
 
-            //foreach (var article in articles)
-            //{
-            //    var category = _articleToCategoryService.GetAll().Include(m => m.BlogCategory).Where(m => m.ArticleId == article.Id).ToList();
-            //    article.CategoryId = category.Select(m => m.BlogCategoryId).ToArray();
-            //    article.CategoryNames = category.Select(m => m.BlogCategory.CategoryName).ToArray();
-            //}
             return articles;
         }
         /// <summary>

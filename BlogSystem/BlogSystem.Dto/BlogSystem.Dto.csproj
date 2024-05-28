@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TopArticleDto.cs" />
     <Compile Include="UserInformationDto.cs" />
+    <Compile Include="WebSiteStatistic.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,11 +3,13 @@ using BlogSystem.Dto;
 using BlogSystem.IBLL;
 using BlogSystem.IDAL;
 using BlogSystem.Models;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace BlogSystem.BLL
 {
@@ -17,6 +19,21 @@ namespace BlogSystem.BLL
         public UserManager(IUserService userService)
         {
             _userService = userService;
+        }
+        public async Task StatisticsUserDataAsync(WebSiteStatistic data)
+        {
+            data.registers = await _userService.GetAll().CountAsync();
+        }
+        public async Task<UserInformationDto> GetUserById(Guid userId)
+        {
+            return await _userService.GetOneByIdAsync(userId).Select(u => new UserInformationDto { 
+                Id = u.Id,
+                Email = u.Email,
+                ImgPath = u.ImagePath,
+                FansCount = u.FansCount,
+                FocusCount = u.FocusCount,
+                UserName = u.NickName
+            }).FirstAsync();
         }
         public async Task<List<Followers>> GetMostFolloerUser()
         {

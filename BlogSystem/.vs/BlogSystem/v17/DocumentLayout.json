@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\shared\\_gettopfourarticle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_gettopfourarticle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\shared\\_layoutmainwithmultiplerow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_layoutmainwithmultiplerow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\article\\articledetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\article\\articledetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\shared\\_searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7793ED08-3CB1-4759-8BB4-13D754F5B392}|BlogSystem.BLL\\BlogSystem.BLL.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.bll\\articlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7793ED08-3CB1-4759-8BB4-13D754F5B392}|BlogSystem.BLL\\BlogSystem.BLL.csproj|solutionrelative:blogsystem.bll\\articlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\article\\createarticle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\article\\createarticle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\user\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\user\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\shared\\_articlelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_articlelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D8AEA80-7650-424D-9A38-44BB78EF77B2}|BlogSystem.DAL\\BlogSystem.DAL.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4D8AEA80-7650-424D-9A38-44BB78EF77B2}|BlogSystem.DAL\\BlogSystem.DAL.csproj|solutionrelative:blogsystem.dal\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 157,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,103 +66,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FAQ.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\FAQ.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Home\\FAQ.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\FAQ.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Home\\FAQ.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T07:33:52.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_GetTopFourArticle.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Title": "_LayoutMainWithMultipleRow.cshtml",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_LayoutMainWithMultipleRow.cshtml",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_LayoutMainWithMultipleRow.cshtml",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_LayoutMainWithMultipleRow.cshtml",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_LayoutMainWithMultipleRow.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T07:07:42.319Z",
+              "WhenOpened": "2024-05-28T03:18:46.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateArticle.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\CreateArticle.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Article\\CreateArticle.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\CreateArticle.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Article\\CreateArticle.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T23:22:21.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_SearchResult.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T23:22:13.951Z",
+              "WhenOpened": "2024-05-28T03:13:15.667Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ArticleList.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_ArticleList.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_ArticleList.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_ArticleList.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_ArticleList.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T23:22:07.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.DAL\\App.config",
-              "RelativeDocumentMoniker": "BlogSystem.DAL\\App.config",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.DAL\\App.config",
-              "RelativeToolTip": "BlogSystem.DAL\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-26T21:01:21.833Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T00:21:38.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ArticleDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T23:22:26.479Z"
+              "WhenOpened": "2024-05-28T02:48:33.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -172,9 +111,74 @@
               "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAIBAAAAAAAAAAAAACUBAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T23:22:31.45Z",
+              "WhenOpened": "2024-05-28T02:17:39.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticleManager.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.BLL\\ArticleManager.cs",
+              "RelativeDocumentMoniker": "BlogSystem.BLL\\ArticleManager.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.BLL\\ArticleManager.cs",
+              "RelativeToolTip": "BlogSystem.BLL\\ArticleManager.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T01:56:58.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAwwJUAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T23:24:09.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAmwIcAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T23:22:05.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAUwEkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T22:56:43.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwCcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:37:41.356Z",
               "EditorCaption": ""
             }
           ]

@@ -4,27 +4,32 @@
 
 @foreach (var item in Model)
 {
-    <div class="col-md-6">
-        <div class="card card-overlay-bottom card-grid-sm card-bg-scale" style="background-image: url(Images/AdobeStock_272072948.jpeg); background-position: center left; background-size: cover;">
-            <img class="rounded img-fluid" src="@item.picPath"/>
-            <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
-                <div class="w-100 mt-auto">
-                    <a href="#" class="badge text-bg-warning mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>@(item.CategoryName == 0 ? "Non-technical" : "Technical")</a>
-                    <h4 class="text-white " ><a href="post-single-4.html" class="btn-link stretched-link text-reset d-inline-block text-truncate" style="max-width: 100%; ">@item.Title</a></h4>
-
-                    <ul class="nav nav-divider text-white-force align-items-center d-none d-sm-inline-block fw-bold">
-                        <li class="nav-item position-relative">
-                            <div class="nav-link">
-                                by <a href="#" class="stretched-link text-reset btn-link">@item.NickName</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">@item.CreateDate</li>
-                    </ul>
+    <div class="col-md-6 ">
+        <article class="card h-100 border-0 shadow-sm ">
+            <div class="position-relative">
+                <a href="@Url.Action("ArticleDetail","Article", new {Id = item.Id})" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Course link"></a>
+                <span class="badge bg-success position-absolute top-0 start-0 zindex-2 mt-3 ms-3">
+                    @(item.CategoryName == 0 ? "Non-technical" : "Technical")
+                </span>
+                <img src="@item.picPath" class="card-img-top " alt="Image">
+            </div>
+            <div class="card-body pb-3 ">
+                <h3 class="h5 mb-2 ">
+                    <a class="text-decoration-none " style=" --bs-link-hover-color-rgb: 29, 165, 04;" href="@Url.Action("ArticleDetail","Article", new {Id = item.Id})">@item.Title</a>
+                </h3>
+                <p class="fs-sm mb-2">By @item.NickName</p>
+            </div>
+            <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+                <div class="d-flex align-items-center me-4">
+                    <i class="bx bx-time fs-xl me-1"></i>
+                    @item.CreateDate.ToString("yyyy-MM-dd")
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-hand-thumbs-up-fill pe-1"></i><span class="nav-item">@item.Likes</span>
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 }
 
 
-                   

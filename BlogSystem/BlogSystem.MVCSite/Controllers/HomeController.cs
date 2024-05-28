@@ -1,4 +1,5 @@
 ﻿using BlogSystem.BLL;
+using BlogSystem.Dto;
 using BlogSystem.IBLL;
 using BlogSystem.MVCSite.Filters;
 using BlogSystem.MVCSite.Models.Shared;
@@ -26,11 +27,29 @@ namespace BlogSystem.MVCSite.Controllers
             _userManager = userManager;
             _articleManager = articleManager;
         }
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            WebSiteStatistic webSiteStatistic = new WebSiteStatistic();
+
+            Task userStatsTask = _userManager.StatisticsUserDataAsync(webSiteStatistic);
+            Task articleStatsTask = _articleManager.StatisticsArticleDataAsync(webSiteStatistic);
+
+            await Task.WhenAll(userStatsTask, articleStatsTask);
+
+            return View(webSiteStatistic);
 
         }
+        //public async Task<ActionResult> GetSiteStatistics()
+        //{
+        //    WebSiteStatistic webSiteStatistic = new WebSiteStatistic();
+
+        //    Task userStatsTask = _userManager.StatisticsUserDataAsync(webSiteStatistic);
+        //    Task articleStatsTask = _articleManager.StatisticsArticleDataAsync(webSiteStatistic);
+
+        //    await Task.WhenAll(userStatsTask, articleStatsTask);
+
+        //    return Json(webSiteStatistic, JsonRequestBehavior.AllowGet);
+        //}
         public ActionResult Register()
         {
             this.ViewBag.Title = "Sign Up";

@@ -1,4 +1,5 @@
 ﻿using BlogSystem.Dto;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace BlogSystem.IBLL
         Task ChangePassWord(string email, string oldPassWord, string newPassWord);
         Task ChangeUserInformation(string email, string siteName, string imgPath);
         UserInformationDto GetUserByEmail(string email);
+        Task<UserInformationDto> GetUserById(Guid userId);
+        Task StatisticsUserDataAsync(WebSiteStatistic data);
 
     }
 }

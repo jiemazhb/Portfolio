@@ -27,5 +27,20 @@ namespace BlogSystem.MVCSite.Controllers
             List<Followers> userWithFolloer = await _userManager.GetMostFolloerUser();
             return PartialView("_Interest", userWithFolloer);
         }
+        public async Task<ActionResult> UserProfile(Guid? userId)
+        {
+            if(userId == null || userId == Guid.Empty)
+            {
+                return PartialView("_NotFound");
+            }
+            else
+            {
+                var user = await _userManager.GetUserById(userId.Value);
+
+                return View(user);
+            }
+
+
+        }
     }
 }
