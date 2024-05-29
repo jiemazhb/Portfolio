@@ -1,207 +1,203 @@
 ﻿@model BlogSystem.Dto.WebSiteStatistic
-<div class="container shadow">
-    <div class="row p-4 p-md-5 mb-4 rounded text-body-emphasis bg-secondary">
-        <div class="col-lg-3 d-flex justify-content-center align-items-center">
-            <img src="@(Session["AvatarPath"] != null ? Session["AvatarPath"]:
-        (Request.Cookies["AvatarPath"] != null ?  Request.Cookies["AvatarPath"].Value : Url.Content("/Images/avatar/human.png")))"
-                 alt="User Avatar" style="width: 150px; height: 150px; border-radius: 50%;">
-        </div>
-        <div class="col-lg-9">
-            <h2>
-                Welcome
 
-                @if (Session["NickName"] != null)
-                {
-                    @Session["NickName"]
-                }else if (Request.Cookies["NickName"] != null)
-                {
-                    @Request.Cookies["NickName"].Value
-                }
-                else
-                {
-                    <a><strong>home</strong></a>
-                }
-            </h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-        </div>
+
+<div class="row mx-0 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-secondary">
+    <div class="col-3 d-flex justify-content-center align-items-center ">
+        <img src="@(Session["AvatarPath"] != null ? Session["AvatarPath"]:
+        (Request.Cookies["AvatarPath"] != null ?  Request.Cookies["AvatarPath"].Value : Url.Content("/Images/avatar/human.png")))"
+             alt="User Avatar" style="width: 150px; height: 150px; border-radius: 50%;">
+    </div>
+    <div class="col-9">
+        <h2>
+            Welcome
+
+            @if (Session["NickName"] != null)
+            {
+                @Session["NickName"]
+            }
+            else if (Request.Cookies["NickName"] != null)
+            {
+                @Request.Cookies["NickName"].Value
+            }
+            else
+            {
+                <a><strong>home</strong></a>
+            }
+        </h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
     </div>
 </div>
 
-<section>
-    <div id="index-content" class="row g-5 mb-4">
-        <div class="col-md-8">
-            <div class="row g-4 mb-4">
 
-                <!-- Counter item -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card card-body border p-3 shadow">
-                        <div class="d-flex align-items-center">
-                            <!-- Icon -->
-                            <div class="icon-xl fs-1 bg-success bg-opacity-10 rounded-3 text-success">
-                                <i class="bi bi-people-fill"></i>
-                            </div>
-                            <!-- Content -->
-                            <div class="ms-3">
-                                <h3 id="comments">@Model.comments</h3>
-                                <h6 class="mb-0">Comments</h6>
-                            </div>
+
+
+<div class="row g-5 mb-4">
+    @*left start*@
+    <div class="col-md-8">
+        <div class="row g-4">
+            <!-- Counter item -->
+            <div class="col-sm-6 col-xl-3">
+                <div class="card card-body border p-3 shadow">
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <div class="icon-xl fs-1 bg-success bg-opacity-10 rounded-3 text-success">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <!-- Content -->
+                        <div class="ms-3">
+                            <h3 id="comments">@Model.comments</h3>
+                            <h6 class="mb-0">Comments</h6>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Counter item -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card card-body border p-3 shadow">
-                        <div class="d-flex align-items-center">
-                            <!-- Icon -->
-                            <div class="icon-xl fs-1 bg-primary bg-opacity-10 rounded-3 text-primary">
-                                <i class="bi bi-file-earmark-text-fill"></i>
-                            </div>
-                            <!-- Content -->
-                            <div class="ms-3">
-                                <h3 id="posts">@Model.posts</h3>
-                                <h6 class="mb-0">Posts</h6>
-                            </div>
+            <!-- Counter item -->
+            <div class="col-sm-6 col-xl-3">
+                <div class="card card-body border p-3 shadow">
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <div class="icon-xl fs-1 bg-primary bg-opacity-10 rounded-3 text-primary">
+                            <i class="bi bi-file-earmark-text-fill"></i>
+                        </div>
+                        <!-- Content -->
+                        <div class="ms-3">
+                            <h3 id="posts">@Model.posts</h3>
+                            <h6 class="mb-0">Posts</h6>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Counter item -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card card-body border p-3 shadow">
-                        <div class="d-flex align-items-center">
-                            <!-- Icon -->
-                            <div class="icon-xl fs-1 bg-danger bg-opacity-10 rounded-3 text-danger">
-                                <i class="bi bi-suit-heart-fill"></i>
-                            </div>
-                            <!-- Content -->
-                            <div class="ms-3">
-                                <h3 id="likes">@Model.likes</h3>
-                                <h6 class="mb-0">Likes</h6>
-                            </div>
+            <!-- Counter item -->
+            <div class="col-sm-6 col-xl-3">
+                <div class="card card-body border p-3 shadow">
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <div class="icon-xl fs-1 bg-danger bg-opacity-10 rounded-3 text-danger">
+                            <i class="bi bi-suit-heart-fill"></i>
+                        </div>
+                        <!-- Content -->
+                        <div class="ms-3">
+                            <h3 id="likes">@Model.likes</h3>
+                            <h6 class="mb-0">Likes</h6>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Counter item -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card card-body border p-3 shadow">
-                        <div class="d-flex align-items-center">
-                            <!-- Icon -->
-                            <div class="icon-xl fs-1 bg-info bg-opacity-10 rounded-3 text-info">
-                                <i class="bi bi-bar-chart-line-fill"></i>
-                            </div>
-                            <!-- Content -->
-                            <div class="ms-3">
-                                <h3 id="registers">@Model.registers</h3>
-                                <h6 class="mb-0">Registers</h6>
-                            </div>
+            <!-- Counter item -->
+            <div class="col-sm-6 col-xl-3">
+                <div class="card card-body border p-3 shadow">
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <div class="icon-xl fs-1 bg-info bg-opacity-10 rounded-3 text-info">
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                        </div>
+                        <!-- Content -->
+                        <div class="ms-3">
+                            <h3 id="registers">@Model.registers</h3>
+                            <h6 class="mb-0">Registers</h6>
                         </div>
                     </div>
                 </div>
-  
-                    @*//$(document).ready(function () {
-                    //    function updateVisitorCount() {
-                    //        $.ajax({
-                    //            url: "/Home/GetSiteStatistics/",
-                    //            type: "get", 
-                    //            success: function (data) {
-                    //                console.log("sadfas ")
-                    //                console.log(data.registers)
-                    //                $("#registers").text(data.registers);
-                    //                $("#likes").text(data.likes);
-                    //                $("#posts").text(data.posts);
-                    //                $("#comments").text(data.comments);
-
-                    //            },
-                    //            error: function (jqXHR, textStatus, errorThrown) {
-                    //            }
-                    //        })
-                    //    }
-                    //    updateVisitorCount();
-                    //})*@
-
-              
-
             </div>
-
-            <div class=" mt-4 bg-success-subtle p-3" style="border-bottom:solid">
-                <h2 class="m-0"><i class="bi bi-hourglass-top me-2"></i>Today's top highlights</h2>
-            </div>
-
-            <div class="card my-4">
-                <div id="mostPopular" class="row  row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-3 gx-md-4 mt-n2 mt-sm-0">
-                    <script>
-                        $("#mostPopular").load("/Article/GetTopFourArticle")
-                    </script>
-                </div>
-
-                @*Card body END*@
-            </div>
-
-            <div id="interest" class="card">
-                <!-- Card header START -->
-                <script>
-                    $("#interest").load("/User/GetMostPopularUser");
-                </script>
-                <!-- Card body END -->
-            </div>
-
-
-            <nav class="blog-pagination mt-4" aria-label="Pagination">
-                <a class="btn btn-outline-primary rounded-pill shadow" href="#">Return Top</a>
-            </nav>
 
         </div>
 
-        <div class="col-md-4">
-            <div class="position-sticky" style="top: 2rem;">
+        <div class="row">
+            <div class="col-12">
+                <div class=" mt-4 bg-success-subtle p-3" style="border-bottom:solid">
+                    <h2 class="m-0"><i class="bi bi-hourglass-top me-2"></i>Today's top highlights</h2>
+                </div>
 
-                <div>
+                <div class="card my-4">
+                    <div id="mostPopular" class="row  row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-3 gx-md-4 mt-n2 mt-sm-0">
+                        <script>
+                            $("#mostPopular").load("/Article/GetTopFourArticle")
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="interest" class="card">
+                    <!-- Card header START -->
+                    <script>
+                        $("#interest").load("/User/GetMostPopularUser");
+                    </script>
+                    <!-- Card body END -->
+                </div>
+                <nav class="blog-pagination mt-4" aria-label="Pagination">
+                    <a class="btn btn-outline-primary rounded-pill shadow" href="#">Return Top</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    @*left end*@
+    @*right start*@
+
+    <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+            <div class="row">
+                <div class="col-12">
                     @{Html.RenderAction("RecentPosts", "Article");}
                 </div>
-
-                <div class="p-4">
-                    <h4 class="fst-italic">Archives</h4>
-                    <ol class="list-unstyled mb-0">
-                        <li><a href="#">March 2021</a></li>
-                        <li><a href="#">February 2021</a></li>
-                        <li><a href="#">January 2021</a></li>
-                        <li><a href="#">December 2020</a></li>
-                        <li><a href="#">November 2020</a></li>
-                        <li><a href="#">October 2020</a></li>
-                        <li><a href="#">September 2020</a></li>
-                        <li><a href="#">August 2020</a></li>
-                        <li><a href="#">July 2020</a></li>
-                        <li><a href="#">June 2020</a></li>
-                        <li><a href="#">May 2020</a></li>
-                        <li><a href="#">April 2020</a></li>
-                    </ol>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="p-4">
+                        <h4 class="fst-italic">Archives</h4>
+                        <ol class="list-unstyled mb-0">
+                            <li><a href="#">March 2021</a></li>
+                            <li><a href="#">February 2021</a></li>
+                            <li><a href="#">January 2021</a></li>
+                            <li><a href="#">December 2020</a></li>
+                            <li><a href="#">November 2020</a></li>
+                            <li><a href="#">October 2020</a></li>
+                            <li><a href="#">September 2020</a></li>
+                            <li><a href="#">August 2020</a></li>
+                            <li><a href="#">July 2020</a></li>
+                            <li><a href="#">June 2020</a></li>
+                            <li><a href="#">May 2020</a></li>
+                            <li><a href="#">April 2020</a></li>
+                        </ol>
+                    </div>
                 </div>
-
-                <div class="p-4">
-                    <h4 class="fst-italic">Elsewhere</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="https://www.google.com/">Google</a></li>
-                        <li><a href="https://www.csulb.edu/">Cal State Long Beach</a></li>
-                        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
-                    </ol>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="p-4">
+                        <h4 class="fst-italic">Elsewhere</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="https://www.google.com/">Google</a></li>
+                            <li><a href="https://www.csulb.edu/">Cal State Long Beach</a></li>
+                            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    @*right end*@
+</div>
 
-</section>
 
 
-<section class="pt-10 pt-md-12 mb-4" id="bottom">
-    <div class="container">
+
+
+<div class="row pt-10 pt-md-12 mb-4" id="bottom">
+    <div class="col-12">
         <div class="row justify-content-center">
             <div>
                 @Html.Partial("Contact")
             </div>
-        </div> <!-- / .row -->
-    </div> <!-- / .container -->
-</section>
+        </div>
+    </div>
+</div>
+
+
 
 

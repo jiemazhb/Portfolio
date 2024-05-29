@@ -7,9 +7,9 @@
     var items = Model.ToList();
 }
 
-<div class="container ">
+
     <div class="row ">
-        <div class="col-6 p-0 pe-lg-2 mb-3 ">
+        <div class="col-6  pe-lg-2 mb-3 ">
             <table class="table table-hover" style="table-layout: fixed; width: 100%;">
                 <thead>
                     <tr class="table-primary">
@@ -47,7 +47,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-6  p-0 pe-lg-2 mb-3">
+        <div class="col-6  pe-lg-2 mb-3">
             <table class="table table-hover" style="table-layout: fixed; width: 100%;">
                 <thead>
                     <tr class="table-primary">
@@ -86,6 +86,7 @@
                 </tbody>
             </table>
         </div>
+
         <nav aria-label="Page navigation example">
             @Html.Pager(Model, new PagerOptions
             {
@@ -108,7 +109,7 @@
             }
         </style>
     </div>
-</div>
+
 
 
 
