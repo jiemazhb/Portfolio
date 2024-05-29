@@ -14,23 +14,24 @@
 }
 else
 {
-    <div class="bg-mode p-4">
-        @foreach (var item in items)
+
+        foreach (var item in items)
         {
             <div class="card bg-transparent border-0">
                 <div class="row g-3" >
-                    <div class="col-4">
-                        <img class="rounded img-fluid" src="@item.ImagePath" alt="" style=" object-fit: cover;">
+                    <div class="col-4 " style="width: 405px; height: 270px; overflow:hidden">
+                        <img class="rounded " src="@item.ImagePath" alt="" style=" width: 100%; height: 100%;">
                     </div>
-                    <div class="col-8" >
+                    <div class="col-8">
                         <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">
                             @(item.CategoryNames == 0 ? "Non-technical" : "Technical")
                         </a>
 
                         <h5><a href="@Url.Action("ArticleDetail","Article", new {id = item.Id})" class="btn-link stretched-link text-reset fw-bold">@item.Title</a></h5>
-                        <div class="d-sm-inline-block" style="font-size: 0.875rem; line-height: 1.5; max-height: 4.5rem; overflow: hidden; text-overflow:ellipsis">
-                            <p class="mb-2 text-truncate">@Html.Raw(item.Content)</p>
+                        <div style="font-size: 0.875rem; line-height: 1.5; max-height: 4.5rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                            <p class="mb-2">@Html.Raw(item.Content)</p>
                         </div>
+
                         <div class="position-absolute bottom-0 end-0 ">
                             <a href="###" class="text-secondary btn-link text-decoration-none me-3 ">by @item.NickName</a>
                             <a class="small text-secondary" href="#!"> <i class="bi bi-calendar-date pe-1"></i>@item.CreateTime</a>
@@ -42,7 +43,6 @@ else
 
             <hr class="my-4" />
         }
-    </div>
 }
 
 
