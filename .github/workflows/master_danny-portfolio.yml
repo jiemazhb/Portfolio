@@ -1,4 +1,4 @@
-name: Build and deploy ASP.NET MVC app to Azure - body-system
+name: Build and deploy ASP.NET MVC app to Azure - danny-portfolio
 
 on:
   push:
@@ -23,20 +23,19 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
 
       - name: 📦 Restore NuGet packages
-        run: nuget restore BodySystem/BodySystem.sln  # Changed from BlogSystem
+        run: nuget restore BlogSystem/BlogSystem.sln
 
-      - name: � Build solution
-        run: msbuild BodySystem/BodySystem.sln /p:Configuration=Release  # Changed
+      - name: 🏗 Build solution
+        run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
-      - name: � Publish to folder
+      - name: 🚀 Publish to folder
         run: |
           mkdir publish
-          msbuild BodySystem/BodySystem.MYCSite/BodySystem.MYCSite.csproj `  # Changed
+          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
             /p:DeployOnBuild=true `
             /p:WebPublishMethod=FileSystem `
             /p:PublishProvider=FileSystem `
             /p:Configuration=Release `
-            /p:DeleteExistingFiles=True `  # Added from image settings
             /p:PublishDir=$(pwd)\publish
 
       - name: 🔍 Check publish output
@@ -60,7 +59,7 @@ jobs:
     needs: build
     environment:
       name: Production
-      url: https://body-system.azurewebsites.net  # Update with your actual URL
+      url: https://danny-portfolio.azurewebsites.net  # Update this if your URL is different
     permissions:
       id-token: write
       contents: read
@@ -70,18 +69,19 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ASP-app
-          path: publish
+          path: publish  # Download to publish folder
 
       - name: 🔐 Azure login
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}  # Update secret names
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
 
       - name: 🚀 Deploy to Azure Web App
+        id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'body-system'  # Changed from danny-portfolio
+          app-name: 'danny-portfolio'
           slot-name: 'Production'
-          package: publish
+          package: publish  # Deploy from the publish folder
