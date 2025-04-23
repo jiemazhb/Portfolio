@@ -24,7 +24,5 @@ namespace BlogSystem.Models
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
         }
 
-        object placeHolderVariable;
-
     }
 }

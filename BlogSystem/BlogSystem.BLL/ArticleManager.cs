@@ -22,14 +22,12 @@ namespace BlogSystem.BLL
         private readonly IArticleToCategoryService _articleToCategoryService;
         private readonly IBlogCategoryService _blogCategoryService;
         private readonly ICommentService _commentService;
-
         public ArticleManager(IArticleService articleService, IArticleToCategoryService articleToCategoryService , IBlogCategoryService blogCategoryService, ICommentService commentService)
         {
             _articleService = articleService;
             _articleToCategoryService = articleToCategoryService;
             _blogCategoryService = blogCategoryService;
             _commentService = commentService;
-
         }
 
         public async Task StatisticsArticleDataAsync(WebSiteStatistic webSiteStatistic)

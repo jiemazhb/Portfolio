@@ -3,48 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\shared\\_gettopfourarticle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_gettopfourarticle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\views\\shared\\_searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\shared\\_searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\article\\articlelistcontainer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\article\\articlelistcontainer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|c:\\users\\16265\\desktop\\git project\\portfolio\\blogsystem\\blogsystem.mvcsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\article\\articledetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\article\\articledetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7793ED08-3CB1-4759-8BB4-13D754F5B392}|BlogSystem.BLL\\BlogSystem.BLL.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.bll\\articlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7793ED08-3CB1-4759-8BB4-13D754F5B392}|BlogSystem.BLL\\BlogSystem.BLL.csproj|solutionrelative:blogsystem.bll\\articlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\blogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\blogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\fans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\fans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\blogcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\blogcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\articletocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\articletocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\views\\user\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\views\\user\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42235EA-04F0-4038-9D0F-3E807C7738C2}|BlogSystem.Dto\\BlogSystem.Dto.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.dto\\addcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42235EA-04F0-4038-9D0F-3E807C7738C2}|BlogSystem.Dto\\BlogSystem.Dto.csproj|solutionrelative:blogsystem.dto\\addcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.mvcsite\\models\\articleviewmodels\\createarticleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285C0170-A4AF-4690-B194-C04A6BD5AB06}|BlogSystem.MVCSite\\BlogSystem.MVCSite.csproj|solutionrelative:blogsystem.mvcsite\\models\\articleviewmodels\\createarticleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Dockerfile||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BlogSystem.MVCSite\\Dockerfile||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.models\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A7268CAD-A9D8-4BB5-BBC1-F17D9F14CE7D}|BlogSystem.Models\\BlogSystem.Models.csproj|solutionrelative:blogsystem.models\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D8AEA80-7650-424D-9A38-44BB78EF77B2}|BlogSystem.DAL\\BlogSystem.DAL.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.dal\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D8AEA80-7650-424D-9A38-44BB78EF77B2}|BlogSystem.DAL\\BlogSystem.DAL.csproj|solutionrelative:blogsystem.dal\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{633D5FAD-338A-42B3-B51B-19D029D9DDF8}|BlogSystem.IDAL\\BlogSystem.IDAL.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.idal\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{633D5FAD-338A-42B3-B51B-19D029D9DDF8}|BlogSystem.IDAL\\BlogSystem.IDAL.csproj|solutionrelative:blogsystem.idal\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{633D5FAD-338A-42B3-B51B-19D029D9DDF8}|BlogSystem.IDAL\\BlogSystem.IDAL.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.idal\\iblogcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{633D5FAD-338A-42B3-B51B-19D029D9DDF8}|BlogSystem.IDAL\\BlogSystem.IDAL.csproj|solutionrelative:blogsystem.idal\\iblogcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{633D5FAD-338A-42B3-B51B-19D029D9DDF8}|BlogSystem.IDAL\\BlogSystem.IDAL.csproj|C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\blogsystem.idal\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{633D5FAD-338A-42B3-B51B-19D029D9DDF8}|BlogSystem.IDAL\\BlogSystem.IDAL.csproj|solutionrelative:blogsystem.idal\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 157,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,141 +133,322 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_GetTopFourArticle.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_GetTopFourArticle.cshtml",
-              "ViewState": "AQIAAB0AAAAAAAAAAADwvzkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T08:50:51.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_SearchResult.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Shared\\_SearchResult.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T08:05:13.065Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ArticleListContainer.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\ArticleListContainer.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Article\\ArticleListContainer.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\ArticleListContainer.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Article\\ArticleListContainer.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAtwDAAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T03:59:09.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ArticleDetail.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Article\\ArticleDetail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-28T02:48:33.957Z"
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\User.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\User.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\User.cs",
+              "RelativeToolTip": "BlogSystem.Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:29:19.817Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ8AAAAVAAAA",
+              "Title": "BlogContext.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\BlogContext.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\BlogContext.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\BlogContext.cs*",
+              "RelativeToolTip": "BlogSystem.Models\\BlogContext.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:24:09.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T00:01:32.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Register.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Home\\Register.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Register.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Home\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T07:54:11.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T07:59:38.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ArticleManager.cs",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.BLL\\ArticleManager.cs",
-              "RelativeDocumentMoniker": "BlogSystem.BLL\\ArticleManager.cs",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.BLL\\ArticleManager.cs",
-              "RelativeToolTip": "BlogSystem.BLL\\ArticleManager.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCQAAAAAAAAA",
+              "DocumentIndex": 18,
+              "Title": "AddComment.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Dto\\AddComment.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Dto\\AddComment.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Dto\\AddComment.cs",
+              "RelativeToolTip": "BlogSystem.Dto\\AddComment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T01:56:58.582Z"
+              "WhenOpened": "2025-01-13T21:05:42.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserProfile.cshtml",
-              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
-              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
-              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
-              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAmwIcAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T23:22:05.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "ArticleController.cs",
               "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
               "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
               "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
               "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\ArticleController.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAUwEkAAABHAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:56:43.501Z"
+              "WhenOpened": "2025-01-13T19:23:55.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
+              "Title": "CreateArticleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Models\\ArticleViewModels\\CreateArticleViewModel.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Models\\ArticleViewModels\\CreateArticleViewModel.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Models\\ArticleViewModels\\CreateArticleViewModel.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Models\\ArticleViewModels\\CreateArticleViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T17:57:17.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\UserController.cs",
               "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAmwCcAAAAgAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T21:37:41.356Z"
+              "WhenOpened": "2025-01-13T19:24:20.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\Article.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\Article.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\Article.cs",
+              "RelativeToolTip": "BlogSystem.Models\\Article.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:32:49.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAqwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T23:39:23.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArticleToCategory.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\ArticleToCategory.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\ArticleToCategory.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\ArticleToCategory.cs",
+              "RelativeToolTip": "BlogSystem.Models\\ArticleToCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:39:26.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\Comment.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\Comment.cs",
+              "RelativeToolTip": "BlogSystem.Models\\Comment.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:41:42.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Fans.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\Fans.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\Fans.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\Fans.cs",
+              "RelativeToolTip": "BlogSystem.Models\\Fans.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:42:41.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogCategory.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\BlogCategory.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\BlogCategory.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\BlogCategory.cs",
+              "RelativeToolTip": "BlogSystem.Models\\BlogCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T17:49:58.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:06:30.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\App.config",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\App.config",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\App.config",
+              "RelativeToolTip": "BlogSystem.Models\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-29T17:14:43.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\BaseEntity.cs",
+              "RelativeToolTip": "BlogSystem.Models\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T17:45:47.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\App_Start\\FilterConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:06:34.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Web.config",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Web.config",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Web.config",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Web.config",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-30T18:58:13.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:06:36.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Views\\User\\UserProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T23:31:03.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Global.asax.cs",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Global.asax.cs",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:07:09.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Dockerfile",
+              "RelativeDocumentMoniker": "BlogSystem.MVCSite\\Dockerfile",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.MVCSite\\Dockerfile",
+              "RelativeToolTip": "BlogSystem.MVCSite\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-03T20:56:13.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\packages.config",
+              "RelativeDocumentMoniker": "BlogSystem.Models\\packages.config",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.Models\\packages.config",
+              "RelativeToolTip": "BlogSystem.Models\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-29T17:14:34.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.DAL\\ArticleService.cs",
+              "RelativeDocumentMoniker": "BlogSystem.DAL\\ArticleService.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.DAL\\ArticleService.cs",
+              "RelativeToolTip": "BlogSystem.DAL\\ArticleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:27:16.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.IDAL\\ICommentService.cs",
+              "RelativeDocumentMoniker": "BlogSystem.IDAL\\ICommentService.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.IDAL\\ICommentService.cs",
+              "RelativeToolTip": "BlogSystem.IDAL\\ICommentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:26:55.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IBlogCategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.IDAL\\IBlogCategoryService.cs",
+              "RelativeDocumentMoniker": "BlogSystem.IDAL\\IBlogCategoryService.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.IDAL\\IBlogCategoryService.cs",
+              "RelativeToolTip": "BlogSystem.IDAL\\IBlogCategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:26:52.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.IDAL\\IArticleService.cs",
+              "RelativeDocumentMoniker": "BlogSystem.IDAL\\IArticleService.cs",
+              "ToolTip": "C:\\Users\\16265\\Desktop\\git Project\\Portfolio\\BlogSystem\\BlogSystem.IDAL\\IArticleService.cs",
+              "RelativeToolTip": "BlogSystem.IDAL\\IArticleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T18:26:42.735Z"
             }
           ]
         }

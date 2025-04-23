@@ -29,18 +29,25 @@ namespace BlogSystem.MVCSite.Controllers
         }
         public async Task<ActionResult> UserProfile(Guid? userId)
         {
-            if(userId == null || userId == Guid.Empty)
+            if (!userId.HasValue || userId == Guid.Empty)
             {
                 return PartialView("_NotFound");
             }
-            else
+
+            try
             {
                 var user = await _userManager.GetUserById(userId.Value);
+                if (user == null)
+                {
+                    return PartialView("_NotFound");
+                }
 
                 return View(user);
             }
-
-
+            catch (Exception ex)
+            {
+                return PartialView("_Error");
+            }
         }
     }
 }

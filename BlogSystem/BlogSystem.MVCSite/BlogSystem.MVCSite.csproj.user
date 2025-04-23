@@ -23,6 +23,8 @@
     <View_SelectedScaffolderCategoryPath>root/Common/MVC/View</View_SelectedScaffolderCategoryPath>
     <NameOfLastUsedPublishProfile>C:\Users\Hong Liang Zhao\Desktop\git\BlogSystem\BlogSystem.MVCSite\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
     <WebStackScaffolding_DbContextTypeFullName>BlogSystem.Models.BlogContext</WebStackScaffolding_DbContextTypeFullName>
+    <ActiveDebugTarget>
+    </ActiveDebugTarget>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
