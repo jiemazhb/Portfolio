@@ -1,4 +1,7 @@
-name: Build and deploy ASP.NET MVC app to Azure - danny-portfolio
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy ASP app to Azure Web App - danny-portfolio
 
 on:
   push:
@@ -10,78 +13,66 @@ jobs:
   build:
     runs-on: windows-latest
     permissions:
-      contents: read
+      contents: read #This is required for actions/checkout
 
     steps:
-      - name: 📥 Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: 🛠 Setup MSBuild path
+      - name: Setup MSBuild path
         uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: 🧰 Setup NuGet
+      - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.5
 
-      - name: 📦 Restore NuGet packages
+      - name: Restore NuGet packages
         run: nuget restore BlogSystem/BlogSystem.sln
-
-      - name: 🏗 Build solution
+      
+      - name: Build solution
         run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
-      - name: 🚀 Publish to folder
+      - name: Publish to folder
         run: |
           mkdir publish
-          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
-            /p:DeployOnBuild=true `
-            /p:WebPublishMethod=FileSystem `
-            /p:PublishProvider=FileSystem `
-            /p:Configuration=Release `
-            /p:PublishDir=$(pwd)\publish
+          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj /p:DeployOnBuild=true /p:Configuration=Release /p:PublishDir=publish
 
-      - name: 🔍 Check publish output
+      - name: Check publish folder content
         run: dir publish
 
-      - name: ❗ Fail if publish folder is empty
-        run: |
-          if (!(Test-Path "publish\*")) {
-            Write-Error "❌ The publish folder is empty. Build or publish step might have failed."
-            exit 1
-          }
-
-      - name: 📤 Upload publish artifact
+      - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: ASP-app
           path: publish/
 
+        
+
   deploy:
     runs-on: windows-latest
     needs: build
     environment:
-      name: Production
-      url: https://danny-portfolio.azurewebsites.net  # Update this if your URL is different
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write
-      contents: read
+      id-token: write #This is required for requesting the JWT
+      contents: read #This is required for actions/checkout
 
     steps:
-      - name: 📥 Download build artifact
+      - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: ASP-app
-          path: publish  # Download to publish folder
-
-      - name: 🔐 Azure login
+      
+      - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}  # Update secret names
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_84409302AB5A4DFE9AE6899741FD0D5D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_68D495498CD849548FF903609041055A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DA91716877B04922876B8279F9BC52DA }}
 
-      - name: 🚀 Deploy to Azure Web App
+      - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'danny-portfolio'
           slot-name: 'Production'
-          package: publish  # Deploy from the publish folder
+          package: publish/
