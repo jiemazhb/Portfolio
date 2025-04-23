@@ -30,15 +30,20 @@ jobs:
       - name: Build solution
         run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
-        
       - name: Publish to folder
-        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
+        run: |
+          mkdir publish
+          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj ^
+            /p:DeployOnBuild=true ^
+            /p:Configuration=Release ^
+            /p:PublishDir=publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: ASP-app
-          path: '/published/**'
+          path: publish/
+          
 
   deploy:
     runs-on: windows-latest
