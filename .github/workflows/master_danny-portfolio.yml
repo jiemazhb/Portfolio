@@ -27,8 +27,8 @@ jobs:
       - name: Restore NuGet packages
         run: nuget restore BlogSystem/BlogSystem.sln
       
-      - name: Build project
-        run: msbuild BlogSystem.sln /p:Configuration=Release
+      - name: Build solution
+        run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
         
       - name: Publish to folder
