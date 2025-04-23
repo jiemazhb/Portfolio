@@ -75,5 +75,5 @@ jobs:
         with:
           app-name: 'danny-portfolio'
           slot-name: 'Production'
-          package: publish/
+          package: .
           
