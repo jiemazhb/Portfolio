@@ -1,8 +1,9 @@
-name: Build and deploy ASP app to Azure Web App - danny-portfolio
+name: Build and deploy ASP.NET MVC app to Azure - danny-portfolio
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
@@ -12,21 +13,22 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v4
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Setup MSBuild path
+      - name: 🛠 Setup MSBuild path
         uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Setup NuGet
+      - name: 🧰 Setup NuGet
         uses: NuGet/setup-nuget@v1.0.5
 
-      - name: Restore NuGet packages
+      - name: 📦 Restore NuGet packages
         run: nuget restore BlogSystem/BlogSystem.sln
 
-      - name: Build solution
+      - name: 🏗 Build solution
         run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
-      - name: Publish to folder
+      - name: 🚀 Publish to folder
         run: |
           mkdir publish
           msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
@@ -36,17 +38,16 @@ jobs:
             /p:Configuration=Release `
             /p:PublishDir=$(pwd)\publish
 
-      
-      - name: Check publish folder content
+      - name: 🔍 Check publish output
         run: dir publish
 
-      - name: Fail if publish folder is empty
+      - name: ❗ Fail if publish folder is empty
         run: |
           if (!(Test-Path "publish\*")) {
             Write-Error "❌ The publish folder is empty. Build or publish step might have failed."
           }
 
-      - name: Upload artifact for deployment job
+      - name: 📤 Upload publish artifact
         uses: actions/upload-artifact@v4
         with:
           name: ASP-app
@@ -56,26 +57,26 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Production'
+      name: Production
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
       id-token: write
       contents: read
 
     steps:
-      - name: Download artifact from build job
+      - name: 📥 Download build artifact
         uses: actions/download-artifact@v4
         with:
           name: ASP-app
 
-      - name: Login to Azure
+      - name: 🔐 Azure login
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_84409302AB5A4DFE9AE6899741FD0D5D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_68D495498CD849548FF903609041055A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DA91716877B04922876B8279F9BC52DA }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_XXXX }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_XXXX }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_XXXX }}
 
-      - name: Deploy to Azure Web App
+      - name: 🚀 Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
