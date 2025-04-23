@@ -35,13 +35,16 @@ jobs:
           mkdir publish
           msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj /p:DeployOnBuild=true /p:Configuration=Release /p:PublishDir=publish
 
+      - name: Check publish folder content
+        run: dir publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: ASP-app
           path: publish/
-          
+
+        
 
   deploy:
     runs-on: windows-latest
@@ -72,5 +75,5 @@ jobs:
         with:
           app-name: 'danny-portfolio'
           slot-name: 'Production'
-          package: .
+          package: publish/
           
