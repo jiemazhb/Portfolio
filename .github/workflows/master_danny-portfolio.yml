@@ -29,8 +29,13 @@ jobs:
       - name: Publish to folder
         run: |
           mkdir publish
-          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj /p:DeployOnBuild=true /p:Configuration=Release /p:PublishDir=publish
-
+          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
+            /p:DeployOnBuild=true `
+            /p:WebPublishMethod=FileSystem `
+            /p:PublishProvider=FileSystem `
+            /p:Configuration=Release `
+            /p:PublishDir=publish
+      
       - name: Check publish folder content
         run: dir publish
 
