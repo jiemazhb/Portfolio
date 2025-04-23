@@ -1,19 +1,15 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
 name: Build and deploy ASP app to Azure Web App - danny-portfolio
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
     permissions:
-      contents: read #This is required for actions/checkout
+      contents: read
 
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +22,7 @@ jobs:
 
       - name: Restore NuGet packages
         run: nuget restore BlogSystem/BlogSystem.sln
-      
+
       - name: Build solution
         run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
@@ -38,13 +34,17 @@ jobs:
       - name: Check publish folder content
         run: dir publish
 
+      - name: Fail if publish folder is empty
+        run: |
+          if (!(Test-Path "publish\*")) {
+            Write-Error "❌ The publish folder is empty. Build or publish step might have failed."
+          }
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: ASP-app
           path: publish/
-
-        
 
   deploy:
     runs-on: windows-latest
@@ -53,15 +53,15 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
-      contents: read #This is required for actions/checkout
+      id-token: write
+      contents: read
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: ASP-app
-      
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -76,4 +76,3 @@ jobs:
           app-name: 'danny-portfolio'
           slot-name: 'Production'
           package: .
-          
