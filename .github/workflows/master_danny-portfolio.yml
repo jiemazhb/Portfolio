@@ -33,7 +33,7 @@ jobs:
       - name: Publish to folder
         run: |
           mkdir publish
-          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
+          msbuild BlogSystem.MVCSite/BlogSystem.MVCSite.csproj`
             /p:DeployOnBuild=true `
             /p:PublishProfile=FolderProfile `
             /p:Configuration=Release `
