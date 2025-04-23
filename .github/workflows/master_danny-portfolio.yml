@@ -27,14 +27,14 @@ jobs:
         run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
       - name: Publish to folder
-      run: |
-        mkdir publish
-        msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
-          /p:DeployOnBuild=true `
-          /p:WebPublishMethod=FileSystem `
-          /p:PublishProvider=FileSystem `
-          /p:Configuration=Release `
-          /p:PublishDir=$(pwd)\publish
+        run: |
+          mkdir publish
+          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
+            /p:DeployOnBuild=true `
+            /p:WebPublishMethod=FileSystem `
+            /p:PublishProvider=FileSystem `
+            /p:Configuration=Release `
+            /p:PublishDir=$(pwd)\publish
 
       
       - name: Check publish folder content
