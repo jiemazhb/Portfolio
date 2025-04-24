@@ -32,34 +32,25 @@ jobs:
 
       - name: Publish to folder
         run: |
-          # 1. 使用绝对路径定义发布目录
+          # 1. 定义绝对路径
           $publishDir = "${{ github.workspace }}/publish"
           
-          # 2. 确保目录存在
-          if (!(Test-Path $publishDir)) { New-Item -ItemType Directory -Path $publishDir -Force }
+          # 2. 创建发布目录
+          New-Item -ItemType Directory -Path $publishDir -Force | Out-Null
           
-          # 3. 打印调试信息
-          Write-Output "工作目录: $(Get-Location)"
-          Write-Output "发布目录: $publishDir"
+          # 3. 使用 dotnet publish 替代 msbuild（更可靠）
+          dotnet publish BlogSystem.MVCSite.csproj `
+            -c Release `
+            -o $publishDir `
+            --no-build `
+            --no-restore
           
-          # 4. 执行发布命令（关键修改）
-          msbuild BlogSystem.MVCSite.csproj `
-            /p:DeployOnBuild=true `
-            /p:Configuration=Release `
-            /p:PublishDir="$publishDir" `
-            /p:DeleteExistingFiles=True `
-            /t:Build;Publish
-          
-          # 5. 验证发布结果
+          # 4. 验证输出
           if (!(Test-Path "$publishDir/*")) {
+            Write-Error "发布目录为空: $publishDir"
             Get-ChildItem -Recurse | Format-Table FullName
-            Write-Error "发布失败：$publishDir 为空"
             exit 1
           }
-          
-          # 6. 显示发布内容
-          Write-Output "发布内容："
-          Get-ChildItem $publishDir -Recurse | Format-Table FullName
         working-directory: BlogSystem/BlogSystem.MVCSite
         shell: pwsh
 
