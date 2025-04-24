@@ -34,7 +34,7 @@ jobs:
             /p:DeployOnBuild=true `
             /p:Configuration=Release `
             /p:PublishDir=..\..\publish `
-            /t:Build;Publish
+            /t:Build;Publish `
         working-directory: BlogSystem/BlogSystem.MVCSite
 
       
