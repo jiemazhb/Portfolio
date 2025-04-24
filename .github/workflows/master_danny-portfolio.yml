@@ -30,10 +30,11 @@ jobs:
 
       - name: Publish to folder
         run: |
-          msbuild BlogSystem/BlogSystem.MVCSite/BlogSystem.MVCSite.csproj `
+          msbuild BlogSystem.MVCSite.csproj `
             /p:DeployOnBuild=true `
             /p:Configuration=Release `
-            /p:PublishDir=publish
+            /p:PublishDir=../../publish
+        working-directory: BlogSystem/BlogSystem.MVCSite
         shell: pwsh
       
       - name: Check publish folder content
