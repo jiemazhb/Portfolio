@@ -33,9 +33,10 @@ jobs:
           msbuild BlogSystem.MVCSite.csproj `
             /p:DeployOnBuild=true `
             /p:Configuration=Release `
-            /p:PublishDir=publish
-        working-directory: BlogSystem/BlogSystem.MVCSite
+            /p:PublishDir=publish `
+            /t:Build;Publish
         shell: pwsh
+        working-directory: BlogSystem/BlogSystem.MVCSite
 
       
       - name: Check publish folder content
