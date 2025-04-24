@@ -33,7 +33,7 @@ jobs:
           msbuild BlogSystem.MVCSite.csproj `
             /p:DeployOnBuild=true `
             /p:Configuration=Release `
-            /p:PublishDir=publish `
+            /p:PublishDir=..\..\publish `
             /t:Build;Publish
         shell: pwsh
         working-directory: BlogSystem/BlogSystem.MVCSite
