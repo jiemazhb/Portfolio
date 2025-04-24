@@ -40,6 +40,7 @@ jobs:
       
       - name: Check publish folder content
         run: dir publish
+        working-directory: BlogSystem/BlogSystem.MVCSite
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
