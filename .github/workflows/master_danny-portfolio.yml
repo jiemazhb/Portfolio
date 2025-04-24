@@ -35,7 +35,6 @@ jobs:
             /p:Configuration=Release `
             /p:PublishDir=..\..\publish `
             /t:Build;Publish
-        shell: pwsh
         working-directory: BlogSystem/BlogSystem.MVCSite
 
       
