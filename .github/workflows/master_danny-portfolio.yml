@@ -29,12 +29,7 @@ jobs:
         run: msbuild BlogSystem/BlogSystem.sln /p:Configuration=Release
 
       - name: Publish to folder
-        run: |
-          msbuild BlogSystem.MVCSite.csproj `
-            /p:DeployOnBuild=true `
-            /p:Configuration=Release `
-            /p:PublishDir=..\..\publish `
-            /t:Build;Publish `
+        run: msbuild BlogSystem.MVCSite.csproj /p:DeployOnBuild=true /p:Configuration=Release /p:PublishDir=..\..\publish /t:Build;Publish
         working-directory: BlogSystem/BlogSystem.MVCSite
 
       
